@@ -71,6 +71,20 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://codexa.dev/blog</loc>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://codexa.dev/blog" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://codexa.dev/en/blog" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://codexa.dev/blog" />
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://codexa.dev/en/blog</loc>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://codexa.dev/blog" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://codexa.dev/en/blog" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://codexa.dev/blog" />
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://codexa.dev/contact</loc>
     <xhtml:link rel="alternate" hreflang="ar" href="https://codexa.dev/contact" />
     <xhtml:link rel="alternate" hreflang="en" href="https://codexa.dev/en/contact" />
@@ -111,6 +125,132 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://codexa.dev/en/terms" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://codexa.dev/terms" />
     <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://codexa.dev/services/web-mobile</loc>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://codexa.dev/services/web-mobile" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://codexa.dev/en/services/web-mobile" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://codexa.dev/services/web-mobile" />
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://codexa.dev/en/services/web-mobile</loc>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://codexa.dev/services/web-mobile" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://codexa.dev/en/services/web-mobile" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://codexa.dev/services/web-mobile" />
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://codexa.dev/services/edtech</loc>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://codexa.dev/services/edtech" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://codexa.dev/en/services/edtech" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://codexa.dev/services/edtech" />
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://codexa.dev/en/services/edtech</loc>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://codexa.dev/services/edtech" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://codexa.dev/en/services/edtech" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://codexa.dev/services/edtech" />
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://codexa.dev/services/enterprise</loc>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://codexa.dev/services/enterprise" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://codexa.dev/en/services/enterprise" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://codexa.dev/services/enterprise" />
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://codexa.dev/en/services/enterprise</loc>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://codexa.dev/services/enterprise" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://codexa.dev/en/services/enterprise" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://codexa.dev/services/enterprise" />
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://codexa.dev/services/infrastructure</loc>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://codexa.dev/services/infrastructure" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://codexa.dev/en/services/infrastructure" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://codexa.dev/services/infrastructure" />
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://codexa.dev/en/services/infrastructure</loc>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://codexa.dev/services/infrastructure" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://codexa.dev/en/services/infrastructure" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://codexa.dev/services/infrastructure" />
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://codexa.dev/services/design-digital</loc>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://codexa.dev/services/design-digital" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://codexa.dev/en/services/design-digital" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://codexa.dev/services/design-digital" />
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://codexa.dev/en/services/design-digital</loc>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://codexa.dev/services/design-digital" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://codexa.dev/en/services/design-digital" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://codexa.dev/services/design-digital" />
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://codexa.dev/blog/how-to-build-mvp</loc>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://codexa.dev/blog/how-to-build-mvp" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://codexa.dev/en/blog/how-to-build-mvp" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://codexa.dev/blog/how-to-build-mvp" />
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://codexa.dev/en/blog/how-to-build-mvp</loc>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://codexa.dev/blog/how-to-build-mvp" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://codexa.dev/en/blog/how-to-build-mvp" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://codexa.dev/blog/how-to-build-mvp" />
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://codexa.dev/blog/why-react-for-startups</loc>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://codexa.dev/blog/why-react-for-startups" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://codexa.dev/en/blog/why-react-for-startups" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://codexa.dev/blog/why-react-for-startups" />
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://codexa.dev/en/blog/why-react-for-startups</loc>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://codexa.dev/blog/why-react-for-startups" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://codexa.dev/en/blog/why-react-for-startups" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://codexa.dev/blog/why-react-for-startups" />
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://codexa.dev/blog/ui-ux-importance</loc>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://codexa.dev/blog/ui-ux-importance" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://codexa.dev/en/blog/ui-ux-importance" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://codexa.dev/blog/ui-ux-importance" />
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://codexa.dev/en/blog/ui-ux-importance</loc>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://codexa.dev/blog/ui-ux-importance" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://codexa.dev/en/blog/ui-ux-importance" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://codexa.dev/blog/ui-ux-importance" />
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://codexa.dev/blog/cloud-hosting-guide</loc>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://codexa.dev/blog/cloud-hosting-guide" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://codexa.dev/en/blog/cloud-hosting-guide" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://codexa.dev/blog/cloud-hosting-guide" />
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://codexa.dev/en/blog/cloud-hosting-guide</loc>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://codexa.dev/blog/cloud-hosting-guide" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://codexa.dev/en/blog/cloud-hosting-guide" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://codexa.dev/blog/cloud-hosting-guide" />
+    <priority>0.6</priority>
   </url>
   <url>
     <loc>https://codexa.dev/portfolio/alsharea-society</loc>

@@ -16,16 +16,32 @@ const staticRoutes = [
   { path: "/portfolio", priority: "0.8" },
   { path: "/pricing", priority: "0.7" },
   { path: "/about", priority: "0.6" },
+  { path: "/blog", priority: "0.7" },
   { path: "/contact", priority: "0.7" },
   { path: "/privacy", priority: "0.3" },
   { path: "/terms", priority: "0.3" },
 ];
 
+const serviceCategories = [
+  "web-mobile",
+  "edtech",
+  "enterprise",
+  "infrastructure",
+  "design-digital",
+].map((cat) => ({ path: `/services/${cat}`, priority: "0.7" }));
+
+const blogPosts = [
+  "how-to-build-mvp",
+  "why-react-for-startups",
+  "ui-ux-importance",
+  "cloud-hosting-guide",
+].map((id) => ({ path: `/blog/${id}`, priority: "0.6" }));
+
 const portfolioSource = readFileSync(join(root, "src/data/portfolio.ts"), "utf-8");
 const slugs = [...portfolioSource.matchAll(/slug:\s*"([^"]+)"/g)].map((m) => m[1]);
 const portfolioRoutes = slugs.map((slug) => ({ path: `/portfolio/${slug}`, priority: "0.6" }));
 
-const allRoutes = [...staticRoutes, ...portfolioRoutes];
+const allRoutes = [...staticRoutes, ...serviceCategories, ...blogPosts, ...portfolioRoutes];
 
 function urlBlock({ path, priority }) {
   const ar = `${SITE_URL}${path}`;
