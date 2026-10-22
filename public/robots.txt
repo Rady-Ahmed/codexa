@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://codexa.dev/sitemap.xml
+Sitemap: https://rady-ahmed.github.io/codexa/sitemap.xml

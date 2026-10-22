@@ -8,7 +8,7 @@ import { dirname, join } from "node:path";
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const root = join(__dirname, "..");
 
-const SITE_URL = "https://codexa.dev";
+const SITE_URL = "https://rady-ahmed.github.io/codexa";
 
 const staticRoutes = [
   { path: "/", priority: "1.0" },
@@ -69,4 +69,5 @@ ${allRoutes.map(urlBlock).join("\n")}
 `;
 
 writeFileSync(join(root, "public/sitemap.xml"), xml);
-console.log(`sitemap.xml generated with ${allRoutes.length * 2} URLs (ar + en)`);
+writeFileSync(join(root, "sitemap.xml"), xml);
+console.log(`sitemap.xml generated with ${allRoutes.length * 2} URLs (ar + en) for ${SITE_URL}`);
