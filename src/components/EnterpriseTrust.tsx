@@ -33,8 +33,8 @@ const cardConfigs = [
     to: "#EC4899",
     glow: "rgba(108, 76, 241, 0.22)",
     tags: {
-      ar: ["جاهزية 99.9%", "Auto-Scaling", "توزيع جغرافي"],
-      en: ["99.9% SLA", "Auto-Scaling", "Multi-Region"],
+      ar: ["جاهزية 100%", "Auto-Scaling", "توزيع جغرافي"],
+      en: ["100% SLA", "Auto-Scaling", "Multi-Region"],
     },
   },
   {

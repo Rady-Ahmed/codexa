@@ -168,7 +168,7 @@ export default function ProjectDetail() {
                 </div>
               ))}
               <div>
-                <div className="mono-badge text-xl font-bold sm:text-3xl text-emerald-400">99.98%</div>
+                <div className="mono-badge text-xl font-bold sm:text-3xl text-emerald-400">100%</div>
                 <div className="mt-1 text-[11px] sm:text-xs text-(--color-muted)">
                   {isAr ? "جاهزية واستقرار الخوادم" : "Platform Uptime SLA"}
                 </div>

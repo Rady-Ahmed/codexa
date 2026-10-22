@@ -1,3 +1,5 @@
+import { dynamicStats } from "../utils/dynamicStats";
+
 export type Lang = "ar" | "en";
 
 export const translations = {
@@ -19,15 +21,15 @@ export const translations = {
         "في Codexa نقدم خدمات تصميم المواقع، المتاجر الإلكترونية، تطوير التطبيقات، منصات كورسات، مواقع شركات احترافية وبناء هوية رقمية احترافية تساعدك على الوصول لعملائك وتحقيق نتائج حقيقية.",
       ctaPrimary: "اطلب عرض سعر",
       ctaSecondary: "استكشف خدماتنا",
-      stat1n: "99.9%",
+      stat1n: dynamicStats.uptime,
       stat1l: "استقرار البنية التحتية",
-      stat2n: "10x",
+      stat2n: dynamicStats.deliverySpeed,
       stat2l: "سرعة تسليم الحلول",
-      stat3n: "3x",
+      stat3n: dynamicStats.growthMultiplier,
       stat3l: "متوسط نمو مبيعات شركائنا",
-      stat4n: "17+",
+      stat4n: dynamicStats.projectsDelivered,
       stat4l: "مشروع مُسلَّم",
-      stat5n: "50+",
+      stat5n: dynamicStats.collaborations,
       stat5l: "تعاون ناجح",
       weBuild: "نبني",
       typewriter: ["تصميم مواقع", "متاجر إلكترونية", "منصات كورسات", "أنظمة ERP", "تطوير تطبيقات", "هوية رقمية"],
@@ -143,7 +145,7 @@ export const translations = {
           ],
           technologies: ["AWS", "Google Cloud", "Docker", "Kubernetes", "Linux", "Nginx"],
           benefits: [
-            "توافر النظام بنسبة 99.9% (Uptime)",
+            "توافر النظام بنسبة 100% (Uptime)",
             "نسخ احتياطي تلقائي مشفر (Automated Backups)",
             "حماية متقدمة ضد هجمات الـ DDoS",
             "توسع مرن للموارد وقت الضغط (Auto-scaling)"
@@ -209,11 +211,11 @@ export const translations = {
     stats: {
       title: "أرقام بتتكلم",
       items: [
-        { n: "99.9%", l: "استقرار البنية التحتية" },
-        { n: "10x", l: "سرعة تسليم الحلول" },
-        { n: "3x", l: "نمو مبيعات شركائنا" },
-        { n: "17+", l: "مشروع مُسلَّم" },
-        { n: "50+", l: "تعاون ناجح" },
+        { n: dynamicStats.uptime, l: "استقرار البنية التحتية" },
+        { n: dynamicStats.deliverySpeed, l: "سرعة تسليم الحلول" },
+        { n: dynamicStats.growthMultiplier, l: "نمو مبيعات شركائنا" },
+        { n: dynamicStats.projectsDelivered, l: "مشروع مُسلَّم" },
+        { n: dynamicStats.collaborations, l: "تعاون ناجح" },
       ],
     },
     cta: {
@@ -348,7 +350,7 @@ export const translations = {
       subtitle: "نحن نبني أنظمة قوية، قابلة للتوسع، وآمنة لتلبية معايير المؤسسات متعددة الجنسيات.",
       items: [
         { title: "أمان متقدم", desc: "تشفير البيانات وحماية ضد الثغرات وتطبيق أفضل ممارسات الأمان العالمية." },
-        { title: "بنية تحتية سحابية", desc: "نشر على منصات سحابية رائدة (AWS, GCP) لضمان توافر بنسبة 99.9%." },
+        { title: "بنية تحتية سحابية", desc: "نشر على منصات سحابية رائدة (AWS, GCP) لضمان توافر بنسبة 100%." },
         { title: "ملكية فكرية كاملة", desc: "نضمن لك الملكية الكاملة للكود المصدري وقواعد البيانات منذ اليوم الأول." },
         { title: "أداء فائق السرعة", desc: "تحسين شامل للأداء باستخدام أحدث التقنيات وأفضل ممارسات البرمجة." }
       ]
@@ -397,15 +399,15 @@ export const translations = {
         "Websites, platforms, internal systems, apps, e-commerce, LMS, ERP — if you can imagine it, we build it. Online or offline, from scratch, with a custom design and clean code.",
       ctaPrimary: "Start your project",
       ctaSecondary: "See our work",
-      stat1n: "99.9%",
+      stat1n: dynamicStats.uptime,
       stat1l: "Infrastructure uptime",
-      stat2n: "10x",
+      stat2n: dynamicStats.deliverySpeed,
       stat2l: "Faster delivery speed",
-      stat3n: "3x",
+      stat3n: dynamicStats.growthMultiplier,
       stat3l: "Average partner sales growth",
-      stat4n: "17+",
+      stat4n: dynamicStats.projectsDelivered,
       stat4l: "Projects shipped",
-      stat5n: "50+",
+      stat5n: dynamicStats.collaborations,
       stat5l: "Successful collaborations",
       weBuild: "We build",
       typewriter: ["Websites", "E-commerce", "LMS Platforms", "ERP Systems", "Mobile Apps", "Digital Identity"],
@@ -521,7 +523,7 @@ export const translations = {
           ],
           technologies: ["AWS", "Google Cloud", "Docker", "Kubernetes", "Linux", "Nginx"],
           benefits: [
-            "99.9% guaranteed system uptime",
+            "100% guaranteed system uptime SLA",
             "Encrypted, automated daily backups",
             "Advanced protection against DDoS attacks",
             "Elastic auto-scaling during traffic spikes"
@@ -587,11 +589,11 @@ export const translations = {
     stats: {
       title: "Numbers that speak",
       items: [
-        { n: "99.9%", l: "Infrastructure uptime" },
-        { n: "10x", l: "Faster delivery speed" },
-        { n: "3x", l: "Average partner growth" },
-        { n: "17+", l: "Projects shipped" },
-        { n: "50+", l: "Successful collaborations" },
+        { n: dynamicStats.uptime, l: "Infrastructure uptime" },
+        { n: dynamicStats.deliverySpeed, l: "Faster delivery speed" },
+        { n: dynamicStats.growthMultiplier, l: "Average partner growth" },
+        { n: dynamicStats.projectsDelivered, l: "Projects shipped" },
+        { n: dynamicStats.collaborations, l: "Successful collaborations" },
       ],
     },
     cta: {
@@ -726,7 +728,7 @@ export const translations = {
       subtitle: "We engineer robust, scalable, and secure systems that meet the rigorous standards of global enterprises.",
       items: [
         { title: "Advanced Security", desc: "Data encryption, vulnerability protection, and strict adherence to global security best practices." },
-        { title: "Cloud Infrastructure", desc: "Deployment on leading cloud platforms (AWS, GCP) ensuring 99.9% uptime." },
+        { title: "Cloud Infrastructure", desc: "Deployment on leading cloud platforms (AWS, GCP) ensuring 100% uptime SLA." },
         { title: "Full IP Ownership", desc: "We guarantee complete ownership of your source code and databases from day one." },
         { title: "Blazing Performance", desc: "Comprehensive performance optimization using cutting-edge technologies and coding standards." }
       ]

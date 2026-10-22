@@ -10,6 +10,8 @@ import Seo from "../components/Seo";
 import { useLang } from "../context/LangContext";
 import SmartCountUp from "../components/SmartCountUp";
 
+import { dynamicStats } from "../utils/dynamicStats";
+
 /* ─── DATA ──────────────────────────────────────────────────────────── */
 const TECH_STACK = [
   { name: "React", color: "#61DAFB" },
@@ -25,16 +27,16 @@ const TECH_STACK = [
 ];
 
 const STATS_AR = [
-  { value: "99.9%", label: "استقرار الأنظمة", icon: Shield, color: "#22D3EE" },
-  { value: "17+",   label: "موقع مُسلَّم",    icon: Globe,  color: "#6C4CF1" },
-  { value: "50+",   label: "تعاون ناجح",      icon: Users,  color: "#34D399" },
-  { value: "10x",   label: "سرعة التسليم",    icon: Zap,    color: "#F59E0B" },
+  { value: dynamicStats.uptime,            label: "استقرار الأنظمة", icon: Shield, color: "#22D3EE" },
+  { value: dynamicStats.projectsDelivered, label: "مشروع وموقع مُسلَّم", icon: Globe, color: "#6C4CF1" },
+  { value: dynamicStats.collaborations,   label: "تعاون وشراكة ناجحة", icon: Users, color: "#34D399" },
+  { value: dynamicStats.deliverySpeed,    label: "سرعة التسليم", icon: Zap, color: "#F59E0B" },
 ];
 const STATS_EN = [
-  { value: "99.9%", label: "System uptime",       icon: Shield, color: "#22D3EE" },
-  { value: "17+",   label: "Websites delivered",  icon: Globe,  color: "#6C4CF1" },
-  { value: "50+",   label: "Collaborations",      icon: Users,  color: "#34D399" },
-  { value: "10x",   label: "Delivery speed",      icon: Zap,    color: "#F59E0B" },
+  { value: dynamicStats.uptime,            label: "System uptime SLA", icon: Shield, color: "#22D3EE" },
+  { value: dynamicStats.projectsDelivered, label: "Websites delivered", icon: Globe, color: "#6C4CF1" },
+  { value: dynamicStats.collaborations,   label: "Collaborations", icon: Users, color: "#34D399" },
+  { value: dynamicStats.deliverySpeed,    label: "Delivery speed", icon: Zap, color: "#F59E0B" },
 ];
 
 const TIMELINE_AR = [

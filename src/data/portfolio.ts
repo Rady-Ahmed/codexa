@@ -265,7 +265,7 @@ export const portfolioProjects: PortfolioProject[] = [
     metrics: [
       { label: { ar: "تقليص زمن الانتظار", en: "Wait Time Reduction" }, value: "-40%" },
       { label: { ar: "معايير أمان السجلات", en: "Data Compliance" }, value: "HIPAA Ready" },
-      { label: { ar: "جاهزية الخوادم", en: "System Uptime" }, value: "99.99%" },
+      { label: { ar: "جاهزية الخوادم", en: "System Uptime" }, value: "100%" },
     ],
   },
 ];

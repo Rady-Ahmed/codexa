@@ -58,7 +58,7 @@ function UptimeBar({ inView }: { inView: boolean }) {
           </span>
         </div>
         <span className="text-xs font-mono text-[#34D399] bg-[#34D399]/10 px-2.5 py-1 rounded-full font-bold">
-          <SmartCountUp value="99.9" />%
+          <SmartCountUp value="100" />%
         </span>
       </div>
 
