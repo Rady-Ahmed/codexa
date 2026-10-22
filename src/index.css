@@ -1,0 +1,177 @@
+@import "tailwindcss";
+
+@theme {
+  /* ── English display: Syne (geometric, techy, bold) ── */
+  --font-display-en: "Syne", "DM Sans", sans-serif;
+  /* ── English body: DM Sans (clean, modern, readable) ── */
+  --font-body-en: "DM Sans", sans-serif;
+  /* ── Arabic display: IBM Plex Sans Arabic (modern engineering, techy) ── */
+  --font-display-ar: "IBM Plex Sans Arabic", "Tajawal", sans-serif;
+  /* ── Arabic body: Tajawal (modern Arabic, clean readability) ── */
+  --font-body-ar: "Tajawal", sans-serif;
+  /* ── Monospace (shared) ── */
+  --font-mono: "JetBrains Mono", monospace;
+
+  /* Legacy aliases for Tailwind utilities */
+  --font-display: "Syne", "IBM Plex Sans Arabic", sans-serif;
+  --font-body: "DM Sans", "Tajawal", sans-serif;
+
+  --color-obsidian: #0a0a0f;
+  --color-surface: #13131c;
+  --color-surface-2: #181822;
+  --color-border: #1f1f2b;
+  --color-indigo: #6c4cf1;
+  --color-indigo-soft: #8b6ff5;
+  --color-cyan: #22d3ee;
+  --color-emerald: #34d399;
+  --color-ink: #f4f4f6;
+  --color-muted: #8b8b9a;
+  --color-muted-2: #55556a;
+}
+
+@keyframes shimmer {
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+html { scroll-behavior: smooth; }
+
+/* ══ Language-specific typography ══════════════════════════════════════════ */
+
+/* English (LTR) — Syne for headings, DM Sans for body */
+[dir="ltr"] body {
+  font-family: "DM Sans", sans-serif;
+  font-size: 16px;
+  line-height: 1.65;
+  letter-spacing: 0.01em;
+  font-feature-settings: "kern" 1, "liga" 1;
+}
+
+/* English headings: Syne — geometric, strong, tech-project feel */
+[dir="ltr"] h1,
+[dir="ltr"] h2,
+[dir="ltr"] h3,
+[dir="ltr"] h4,
+[dir="ltr"] h5 {
+  font-family: "Syne", sans-serif;
+  letter-spacing: -0.02em;
+  line-height: 1.1;
+}
+
+/* Arabic (RTL) — Tajawal body, Amiri for headings */
+[dir="rtl"] body {
+  font-family: "Tajawal", sans-serif;
+  font-size: 17px;
+  line-height: 1.85;
+  letter-spacing: 0;
+  word-spacing: 0.04em;
+}
+
+/* Arabic headings: IBM Plex Sans Arabic — modern, tech-focused, crisp */
+[dir="rtl"] h1,
+[dir="rtl"] h2,
+[dir="rtl"] h3,
+[dir="rtl"] h4,
+[dir="rtl"] h5 {
+  font-family: "IBM Plex Sans Arabic", "Tajawal", sans-serif;
+  font-weight: 700;
+  line-height: 1.25;
+  letter-spacing: -0.01em;
+}
+
+body {
+  background-color: var(--color-obsidian);
+  color: var(--color-ink);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+@keyframes marqueeRtl {
+  from { transform: translateX(0); }
+  to { transform: translateX(50%); }
+}
+@keyframes glow {
+  0%, 100% { opacity: 0.55; transform: scale(1); }
+  50% { opacity: 0.85; transform: scale(1.06); }
+}
+
+::selection { background: var(--color-indigo); color: white; }
+
+
+a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visible {
+  outline: 2px solid var(--color-cyan);
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+.gradient-text {
+  background: linear-gradient(135deg, var(--color-indigo) 0%, var(--color-cyan) 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.glass {
+  background: color-mix(in srgb, var(--color-surface) 70%, transparent);
+  backdrop-filter: blur(16px);
+  border: 1px solid var(--color-border);
+}
+
+.mono-badge { font-family: var(--font-mono); letter-spacing: 0.02em; }
+
+.skip-link {
+  position: fixed;
+  top: -100px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 100;
+  background: var(--color-indigo);
+  color: white;
+  padding: 0.75rem 1.25rem;
+  border-radius: 0 0 0.5rem 0.5rem;
+  font-size: 0.875rem;
+  transition: top 0.2s ease;
+}
+.skip-link:focus {
+  top: 0;
+}
+
+.marquee-track { animation: marquee 32s linear infinite; }
+[dir="rtl"] .marquee-track { animation: marqueeRtl 32s linear infinite; }
+
+.glow-orb {
+  animation: glow 7s ease-in-out infinite;
+}
+
+/* ── Geometric & Engineering Backgrounds ── */
+.bg-grid {
+  background-size: 40px 40px;
+  background-image: 
+    linear-gradient(to right, color-mix(in srgb, var(--color-indigo) 10%, transparent) 1px, transparent 1px),
+    linear-gradient(to bottom, color-mix(in srgb, var(--color-indigo) 10%, transparent) 1px, transparent 1px);
+}
+
+.bg-dots {
+  background-image: radial-gradient(color-mix(in srgb, var(--color-cyan) 25%, transparent) 1px, transparent 1px);
+  background-size: 20px 20px;
+}
+
+.sharp-border {
+  border: 1px solid var(--color-border);
+  border-radius: 0;
+  clip-path: polygon(0 0, 100% 0, 100% calc(100% - 15px), calc(100% - 15px) 100%, 0 100%);
+}

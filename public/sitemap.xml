@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://codexa.dev/</loc>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://codexa.dev/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://codexa.dev/en" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://codexa.dev/" />
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://codexa.dev/en</loc>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://codexa.dev/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://codexa.dev/en" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://codexa.dev/" />
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://codexa.dev/services</loc>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://codexa.dev/services" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://codexa.dev/en/services" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://codexa.dev/services" />
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://codexa.dev/en/services</loc>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://codexa.dev/services" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://codexa.dev/en/services" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://codexa.dev/services" />
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://codexa.dev/portfolio</loc>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://codexa.dev/portfolio" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://codexa.dev/en/portfolio" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://codexa.dev/portfolio" />
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://codexa.dev/en/portfolio</loc>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://codexa.dev/portfolio" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://codexa.dev/en/portfolio" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://codexa.dev/portfolio" />
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://codexa.dev/pricing</loc>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://codexa.dev/pricing" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://codexa.dev/en/pricing" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://codexa.dev/pricing" />
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://codexa.dev/en/pricing</loc>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://codexa.dev/pricing" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://codexa.dev/en/pricing" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://codexa.dev/pricing" />
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://codexa.dev/about</loc>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://codexa.dev/about" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://codexa.dev/en/about" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://codexa.dev/about" />
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://codexa.dev/en/about</loc>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://codexa.dev/about" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://codexa.dev/en/about" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://codexa.dev/about" />
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://codexa.dev/contact</loc>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://codexa.dev/contact" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://codexa.dev/en/contact" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://codexa.dev/contact" />
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://codexa.dev/en/contact</loc>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://codexa.dev/contact" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://codexa.dev/en/contact" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://codexa.dev/contact" />
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://codexa.dev/privacy</loc>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://codexa.dev/privacy" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://codexa.dev/en/privacy" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://codexa.dev/privacy" />
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://codexa.dev/en/privacy</loc>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://codexa.dev/privacy" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://codexa.dev/en/privacy" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://codexa.dev/privacy" />
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://codexa.dev/terms</loc>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://codexa.dev/terms" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://codexa.dev/en/terms" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://codexa.dev/terms" />
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://codexa.dev/en/terms</loc>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://codexa.dev/terms" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://codexa.dev/en/terms" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://codexa.dev/terms" />
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://codexa.dev/portfolio/alsharea-society</loc>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://codexa.dev/portfolio/alsharea-society" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://codexa.dev/en/portfolio/alsharea-society" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://codexa.dev/portfolio/alsharea-society" />
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://codexa.dev/en/portfolio/alsharea-society</loc>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://codexa.dev/portfolio/alsharea-society" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://codexa.dev/en/portfolio/alsharea-society" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://codexa.dev/portfolio/alsharea-society" />
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://codexa.dev/portfolio/masar-lms</loc>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://codexa.dev/portfolio/masar-lms" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://codexa.dev/en/portfolio/masar-lms" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://codexa.dev/portfolio/masar-lms" />
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://codexa.dev/en/portfolio/masar-lms</loc>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://codexa.dev/portfolio/masar-lms" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://codexa.dev/en/portfolio/masar-lms" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://codexa.dev/portfolio/masar-lms" />
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://codexa.dev/portfolio/roaa-quran</loc>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://codexa.dev/portfolio/roaa-quran" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://codexa.dev/en/portfolio/roaa-quran" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://codexa.dev/portfolio/roaa-quran" />
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://codexa.dev/en/portfolio/roaa-quran</loc>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://codexa.dev/portfolio/roaa-quran" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://codexa.dev/en/portfolio/roaa-quran" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://codexa.dev/portfolio/roaa-quran" />
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://codexa.dev/portfolio/codexa-portfolio</loc>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://codexa.dev/portfolio/codexa-portfolio" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://codexa.dev/en/portfolio/codexa-portfolio" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://codexa.dev/portfolio/codexa-portfolio" />
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://codexa.dev/en/portfolio/codexa-portfolio</loc>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://codexa.dev/portfolio/codexa-portfolio" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://codexa.dev/en/portfolio/codexa-portfolio" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://codexa.dev/portfolio/codexa-portfolio" />
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://codexa.dev/portfolio/care-hospital-erp</loc>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://codexa.dev/portfolio/care-hospital-erp" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://codexa.dev/en/portfolio/care-hospital-erp" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://codexa.dev/portfolio/care-hospital-erp" />
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://codexa.dev/en/portfolio/care-hospital-erp</loc>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://codexa.dev/portfolio/care-hospital-erp" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://codexa.dev/en/portfolio/care-hospital-erp" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://codexa.dev/portfolio/care-hospital-erp" />
+    <priority>0.6</priority>
+  </url>
+</urlset>
