@@ -164,9 +164,21 @@ export default function ContactPage() {
               </div>
             )}
             {status === "error" && (
-              <div className="mt-4 flex items-center gap-2 rounded-lg bg-red-500/10 px-4 py-3 text-sm text-red-400">
-                <AlertCircle size={16} />
-                {t.contactPage.error}
+              <div className="mt-4 rounded-lg bg-red-500/10 p-4 text-sm text-red-400">
+                <div className="flex items-center gap-2 font-medium">
+                  <AlertCircle size={16} />
+                  {t.contactPage.error}
+                </div>
+                <p className="mt-2 text-xs text-(--color-muted)">
+                  <a
+                    href="https://wa.me/201101970882"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="text-(--color-cyan) underline hover:text-white"
+                  >
+                    {lang === "ar" ? "أو اضغط هنا للمراسلة المباشرة عبر واتساب (+201101970882)" : "Or click here to chat directly via WhatsApp (+201101970882)"}
+                  </a>
+                </p>
               </div>
             )}
           </form>
