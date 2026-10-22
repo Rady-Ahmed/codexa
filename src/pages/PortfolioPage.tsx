@@ -38,6 +38,23 @@ export default function PortfolioPage() {
         subtitle={t.portfolio.subtitle}
       />
 
+      {/* Live Production Systems Indicator */}
+      <section className="mx-auto max-w-6xl px-4 sm:px-5 pb-6">
+        <Reveal>
+          <div className="flex items-center justify-center gap-2.5 rounded-full border border-emerald-500/30 bg-emerald-950/40 py-2 px-5 text-xs text-emerald-300 w-fit mx-auto backdrop-blur-md shadow-lg shadow-emerald-950/40">
+            <span className="relative flex h-2 w-2">
+              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75" />
+              <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-400" />
+            </span>
+            <span className="font-bold">
+              {lang === "ar"
+                ? "مشاريع حية ومُطلقة — يمكنك معاينة وتجربة كل موقع مباشرة عبر زر LIVE"
+                : "Live Production Systems — visit & experience each client project with the LIVE button"}
+            </span>
+          </div>
+        </Reveal>
+      </section>
+
       {/* Filter Tabs */}
       <section className="mx-auto max-w-6xl px-4 sm:px-5 pb-6 sm:pb-8">
         <Reveal>

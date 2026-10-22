@@ -9,7 +9,7 @@ import { useLang } from "../context/LangContext";
 export default function PortfolioPreview() {
   const { t, dir, path } = useLang();
   const Arrow = dir === "rtl" ? ArrowLeft : ArrowRight;
-  const featured = portfolioProjects.slice(0, 3);
+  const featured = portfolioProjects.slice(0, 6);
 
   return (
     <section className="mx-auto max-w-6xl px-5 py-24">

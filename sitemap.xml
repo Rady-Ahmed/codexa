@@ -267,45 +267,73 @@
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://codexasite.vercel.app/portfolio/masar-lms</loc>
-    <xhtml:link rel="alternate" hreflang="ar" href="https://codexasite.vercel.app/portfolio/masar-lms" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://codexasite.vercel.app/en/portfolio/masar-lms" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://codexasite.vercel.app/portfolio/masar-lms" />
+    <loc>https://codexasite.vercel.app/portfolio/rawaa-quran-academy</loc>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://codexasite.vercel.app/portfolio/rawaa-quran-academy" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://codexasite.vercel.app/en/portfolio/rawaa-quran-academy" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://codexasite.vercel.app/portfolio/rawaa-quran-academy" />
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://codexasite.vercel.app/en/portfolio/masar-lms</loc>
-    <xhtml:link rel="alternate" hreflang="ar" href="https://codexasite.vercel.app/portfolio/masar-lms" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://codexasite.vercel.app/en/portfolio/masar-lms" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://codexasite.vercel.app/portfolio/masar-lms" />
+    <loc>https://codexasite.vercel.app/en/portfolio/rawaa-quran-academy</loc>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://codexasite.vercel.app/portfolio/rawaa-quran-academy" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://codexasite.vercel.app/en/portfolio/rawaa-quran-academy" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://codexasite.vercel.app/portfolio/rawaa-quran-academy" />
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://codexasite.vercel.app/portfolio/roaa-quran</loc>
-    <xhtml:link rel="alternate" hreflang="ar" href="https://codexasite.vercel.app/portfolio/roaa-quran" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://codexasite.vercel.app/en/portfolio/roaa-quran" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://codexasite.vercel.app/portfolio/roaa-quran" />
+    <loc>https://codexasite.vercel.app/portfolio/center-amenities</loc>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://codexasite.vercel.app/portfolio/center-amenities" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://codexasite.vercel.app/en/portfolio/center-amenities" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://codexasite.vercel.app/portfolio/center-amenities" />
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://codexasite.vercel.app/en/portfolio/roaa-quran</loc>
-    <xhtml:link rel="alternate" hreflang="ar" href="https://codexasite.vercel.app/portfolio/roaa-quran" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://codexasite.vercel.app/en/portfolio/roaa-quran" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://codexasite.vercel.app/portfolio/roaa-quran" />
+    <loc>https://codexasite.vercel.app/en/portfolio/center-amenities</loc>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://codexasite.vercel.app/portfolio/center-amenities" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://codexasite.vercel.app/en/portfolio/center-amenities" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://codexasite.vercel.app/portfolio/center-amenities" />
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://codexasite.vercel.app/portfolio/codexa-portfolio</loc>
-    <xhtml:link rel="alternate" hreflang="ar" href="https://codexasite.vercel.app/portfolio/codexa-portfolio" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://codexasite.vercel.app/en/portfolio/codexa-portfolio" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://codexasite.vercel.app/portfolio/codexa-portfolio" />
+    <loc>https://codexasite.vercel.app/portfolio/spak-taif</loc>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://codexasite.vercel.app/portfolio/spak-taif" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://codexasite.vercel.app/en/portfolio/spak-taif" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://codexasite.vercel.app/portfolio/spak-taif" />
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://codexasite.vercel.app/en/portfolio/codexa-portfolio</loc>
-    <xhtml:link rel="alternate" hreflang="ar" href="https://codexasite.vercel.app/portfolio/codexa-portfolio" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://codexasite.vercel.app/en/portfolio/codexa-portfolio" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://codexasite.vercel.app/portfolio/codexa-portfolio" />
+    <loc>https://codexasite.vercel.app/en/portfolio/spak-taif</loc>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://codexasite.vercel.app/portfolio/spak-taif" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://codexasite.vercel.app/en/portfolio/spak-taif" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://codexasite.vercel.app/portfolio/spak-taif" />
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://codexasite.vercel.app/portfolio/clean-najran</loc>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://codexasite.vercel.app/portfolio/clean-najran" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://codexasite.vercel.app/en/portfolio/clean-najran" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://codexasite.vercel.app/portfolio/clean-najran" />
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://codexasite.vercel.app/en/portfolio/clean-najran</loc>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://codexasite.vercel.app/portfolio/clean-najran" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://codexasite.vercel.app/en/portfolio/clean-najran" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://codexasite.vercel.app/portfolio/clean-najran" />
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://codexasite.vercel.app/portfolio/rady-portfolio</loc>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://codexasite.vercel.app/portfolio/rady-portfolio" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://codexasite.vercel.app/en/portfolio/rady-portfolio" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://codexasite.vercel.app/portfolio/rady-portfolio" />
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://codexasite.vercel.app/en/portfolio/rady-portfolio</loc>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://codexasite.vercel.app/portfolio/rady-portfolio" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://codexasite.vercel.app/en/portfolio/rady-portfolio" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://codexasite.vercel.app/portfolio/rady-portfolio" />
     <priority>0.6</priority>
   </url>
   <url>

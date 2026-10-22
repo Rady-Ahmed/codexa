@@ -107,7 +107,23 @@ export default function ProjectDetail() {
             </p>
 
             {/* Action Buttons */}
-            <div className="mt-6 sm:mt-8 flex flex-col sm:flex-row items-stretch sm:items-center gap-3 sm:gap-4">
+            <div className="mt-6 sm:mt-8 flex flex-col sm:flex-row flex-wrap items-stretch sm:items-center gap-3 sm:gap-4">
+              {project.liveUrl && (
+                <a
+                  href={project.liveUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="group inline-flex items-center justify-center gap-2.5 rounded-xl bg-gradient-to-r from-emerald-500 to-teal-500 px-6 py-3.5 text-sm font-bold text-white shadow-[0_10px_25px_rgba(16,185,129,0.35)] transition-all hover:scale-[1.03] active:scale-[0.98] hover:shadow-[0_15px_35px_rgba(16,185,129,0.5)]"
+                >
+                  <span className="relative flex h-2.5 w-2.5">
+                    <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-white opacity-75" />
+                    <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-white" />
+                  </span>
+                  <ExternalLink size={17} />
+                  {isAr ? "معاينة وزيارة الموقع الحي ↗" : "Visit Live Production Site ↗"}
+                </a>
+              )}
+
               <a
                 href={`https://wa.me/201101970882?text=${whatsappMessage}`}
                 target="_blank"
@@ -125,7 +141,7 @@ export default function ProjectDetail() {
                 className="inline-flex items-center justify-center gap-2 rounded-xl border border-white/10 bg-white/5 px-5 py-3.5 text-sm font-medium text-white transition-colors hover:border-white/20 hover:bg-white/10"
               >
                 <ExternalLink size={16} className="text-(--color-cyan)" />
-                {isAr ? "استشارة معمارية مجانية" : "Free Tech Consultation"}
+                {isAr ? "استشارة مجانية" : "Free Consultation"}
               </a>
             </div>
 
@@ -214,23 +230,65 @@ export default function ProjectDetail() {
                   <span className="h-3 w-3 rounded-full bg-amber-500/80" />
                   <span className="h-3 w-3 rounded-full bg-emerald-500/80" />
                 </div>
-                <div className="mx-auto flex max-w-sm flex-1 items-center justify-center rounded-lg border border-white/10 bg-black/40 px-4 py-1 text-[11px] font-mono text-white/60">
-                  <span className="text-emerald-400 me-1.5">https://</span>
-                  {project.slug}.codexa.app
-                </div>
-                <span className="mono-badge text-[10px] uppercase tracking-wider text-white/40">
-                  LIVE
-                </span>
+                
+                {project.liveUrl ? (
+                  <a
+                    href={project.liveUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="mx-auto flex max-w-md flex-1 items-center justify-center gap-1.5 rounded-lg border border-white/15 bg-black/60 px-4 py-1.5 text-[11px] font-mono text-white/80 transition-all hover:border-emerald-500/50 hover:bg-black/80 hover:text-white"
+                    title={isAr ? "افتح الموقع الحي في نافذة جديدة" : "Open live site in new tab"}
+                  >
+                    <span className="text-emerald-400 font-bold">https://</span>
+                    <span>{project.liveUrl.replace(/^https?:\/\//, "").replace(/\/$/, "")}</span>
+                    <ExternalLink size={12} className="text-emerald-400 ms-1" />
+                  </a>
+                ) : (
+                  <div className="mx-auto flex max-w-sm flex-1 items-center justify-center rounded-lg border border-white/10 bg-black/40 px-4 py-1 text-[11px] font-mono text-white/60">
+                    <span className="text-emerald-400 me-1.5">https://</span>
+                    {project.slug}.codexa.app
+                  </div>
+                )}
+
+                {project.liveUrl ? (
+                  <a
+                    href={project.liveUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="mono-badge inline-flex items-center gap-1 text-[10px] uppercase tracking-wider text-emerald-400 font-bold hover:underline"
+                  >
+                    <span className="h-1.5 w-1.5 rounded-full bg-emerald-400 animate-pulse" />
+                    LIVE
+                  </a>
+                ) : (
+                  <span className="mono-badge text-[10px] uppercase tracking-wider text-white/40">
+                    MOCK
+                  </span>
+                )}
               </div>
 
-              {/* Real Project Image with ambient tint */}
-              <div className="relative aspect-[16/9] w-full overflow-hidden bg-black/60">
+              {/* Real Project Image with ambient tint & hover live action */}
+              <div className="group/mockup relative aspect-[16/9] w-full overflow-hidden bg-black/60">
                 <img
                   src={project.image}
                   alt={project.name}
-                  className="h-full w-full object-cover object-top transition-transform duration-700 hover:scale-105"
+                  className="h-full w-full object-cover object-top transition-transform duration-700 group-hover/mockup:scale-105"
                 />
                 <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-[#0e0e1a]/80 via-transparent to-transparent" />
+
+                {project.liveUrl && (
+                  <div className="absolute inset-0 flex items-center justify-center opacity-0 backdrop-blur-xs transition-opacity duration-300 group-hover/mockup:opacity-100 bg-black/40">
+                    <a
+                      href={project.liveUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-2 rounded-2xl bg-white px-6 py-3 text-sm font-black text-black shadow-2xl transition-transform hover:scale-105 active:scale-95"
+                    >
+                      <ExternalLink size={16} />
+                      {isAr ? "معاينة حية للمشروع ↗" : "Launch Live Demo ↗"}
+                    </a>
+                  </div>
+                )}
               </div>
             </div>
           ) : (
