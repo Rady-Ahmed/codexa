@@ -39,14 +39,14 @@ export default function PortfolioPage() {
       />
 
       {/* Filter Tabs */}
-      <section className="mx-auto max-w-6xl px-5 pb-8">
+      <section className="mx-auto max-w-6xl px-4 sm:px-5 pb-6 sm:pb-8">
         <Reveal>
-          <div className="flex flex-wrap gap-2 justify-center">
+          <div className="flex flex-wrap gap-1.5 sm:gap-2 justify-center">
             {categories.map((cat) => (
               <button
                 key={cat.key}
                 onClick={() => setActive(cat.key)}
-                className={`rounded-xl px-4 py-2 text-sm font-medium transition-all ${
+                className={`rounded-xl px-3 py-1.5 sm:px-4 sm:py-2 text-xs sm:text-sm font-medium transition-all ${
                   active === cat.key
                     ? "bg-gradient-to-r from-(--color-indigo) to-(--color-cyan) text-white shadow-lg shadow-(--color-indigo)/30"
                     : "border border-(--color-border) text-(--color-muted) hover:text-(--color-ink) hover:border-(--color-indigo)/30 bg-white/3"
@@ -60,7 +60,7 @@ export default function PortfolioPage() {
       </section>
 
       {/* Portfolio Grid */}
-      <section className="mx-auto max-w-6xl px-5 pb-24">
+      <section className="mx-auto max-w-6xl px-4 sm:px-5 pb-16 sm:pb-24">
         <AnimatePresence mode="wait">
           <motion.div
             key={active}

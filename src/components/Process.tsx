@@ -6,10 +6,10 @@ export default function Process() {
   const { t } = useLang();
 
   return (
-    <section className="mx-auto max-w-6xl px-5 py-24">
+    <section className="mx-auto max-w-6xl px-4 sm:px-5 py-16 sm:py-24">
       <SectionHeader eyebrow={t.process.eyebrow} title={t.process.title} />
 
-      <div className="relative mt-16 grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4">
+      <div className="relative mt-10 sm:mt-16 grid grid-cols-1 gap-6 sm:gap-8 sm:grid-cols-2 lg:grid-cols-4">
         <div
           aria-hidden
           className="absolute top-6 hidden h-px w-full bg-gradient-to-r from-transparent via-(--color-border) to-transparent lg:block"

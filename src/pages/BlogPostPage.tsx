@@ -1,4 +1,4 @@
-﻿import { useParams, Link } from "react-router-dom";
+import { useParams, Link } from "react-router-dom";
 import { Calendar, Clock, ArrowLeft, ArrowRight, MessageCircle } from "lucide-react";
 import { motion } from "framer-motion";
 import CTASection from "../components/CTASection";
@@ -298,46 +298,46 @@ export default function BlogPostPage() {
     <>
       <Seo title={`${title} | Codexa`} description={post.excerpt[lang]} />
 
-      <div className="relative h-64 sm:h-80 md:h-96 w-full overflow-hidden">
+      <div className="relative h-48 sm:h-80 md:h-96 w-full overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-b from-black/20 to-[#09090b] z-10" />
         <img src={post.image} alt={title} className="w-full h-full object-cover" />
       </div>
 
-      <article className="mx-auto max-w-3xl px-5 pb-24 -mt-4" dir={dir}>
+      <article className="mx-auto max-w-3xl px-4 sm:px-5 pb-16 sm:pb-24 -mt-4" dir={dir}>
         <Link
           to={path("/blog")}
-          className="inline-flex items-center gap-2 text-sm text-(--color-muted) hover:text-(--color-cyan) transition-colors mb-8 mt-8"
+          className="inline-flex items-center gap-2 text-sm text-(--color-muted) hover:text-(--color-cyan) transition-colors mb-6 mt-6 sm:mb-8 sm:mt-8"
         >
           {isAr ? <ArrowRight size={15} /> : <ArrowLeft size={15} />}
           {isAr ? "العودة للمدونة" : "Back to blog"}
         </Link>
 
         <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }}>
-          <span className="inline-block rounded-full bg-(--color-indigo)/20 border border-(--color-indigo)/30 px-3 py-1 text-xs font-semibold text-(--color-indigo) mb-4">
+          <span className="inline-block rounded-full bg-(--color-indigo)/20 border border-(--color-indigo)/30 px-3 py-1 text-xs font-semibold text-(--color-indigo) mb-3 sm:mb-4">
             {post.category[lang]}
           </span>
-          <h1 className="text-3xl sm:text-4xl font-bold text-(--color-ink) leading-snug">{title}</h1>
-          <div className="mt-4 flex items-center gap-4 text-sm text-(--color-muted)">
-            <span className="flex items-center gap-1.5"><Calendar size={14} />{post.date[lang]}</span>
-            <span className="flex items-center gap-1.5"><Clock size={14} />{post.readTime[lang]}</span>
+          <h1 className="text-2xl sm:text-4xl font-bold text-(--color-ink) leading-snug">{title}</h1>
+          <div className="mt-3 sm:mt-4 flex items-center gap-3 sm:gap-4 text-xs sm:text-sm text-(--color-muted)">
+            <span className="flex items-center gap-1.5"><Calendar size={13} />{post.date[lang]}</span>
+            <span className="flex items-center gap-1.5"><Clock size={13} />{post.readTime[lang]}</span>
           </div>
-          <div className="mt-10 border-t border-(--color-border) pt-8">{renderBody(post.body[lang])}</div>
+          <div className="mt-8 sm:mt-10 border-t border-(--color-border) pt-6 sm:pt-8">{renderBody(post.body[lang])}</div>
         </motion.div>
 
         <motion.div
           initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5, delay: 0.3 }}
-          className="mt-16 rounded-2xl border border-(--color-border) bg-white/[0.02] p-8 text-center"
+          className="mt-12 sm:mt-16 rounded-2xl border border-(--color-border) bg-white/[0.02] p-5 sm:p-8 text-center"
         >
-          <h2 className="text-xl font-bold text-(--color-ink) mb-3">
+          <h2 className="text-lg sm:text-xl font-bold text-(--color-ink) mb-2 sm:mb-3">
             {isAr ? "هل مشروعك جاهز للانطلاق؟" : "Ready to launch your project?"}
           </h2>
-          <p className="text-sm text-(--color-muted) mb-6">
+          <p className="text-xs sm:text-sm text-(--color-muted) mb-5 sm:mb-6">
             {isAr ? "تواصل معنا الآن لجلسة استشارية مجانية." : "Contact us now for a free consultation session."}
           </p>
           <a
             href={`https://wa.me/201101970882?text=${encodeURIComponent(isAr ? `مرحباً، قرأت مقال "${title}" وأريد الاستفسار` : `Hi, I read "${title}" and I'd like to inquire`)}`}
             target="_blank" rel="noreferrer"
-            className="inline-flex items-center gap-2 rounded-xl bg-gradient-to-r from-(--color-indigo) to-(--color-cyan) px-6 py-3 text-sm font-semibold text-white transition-opacity hover:opacity-90"
+            className="inline-flex w-full sm:w-auto justify-center items-center gap-2 rounded-xl bg-gradient-to-r from-(--color-indigo) to-(--color-cyan) px-6 py-3 text-sm font-semibold text-white transition-opacity hover:opacity-90"
           >
             <MessageCircle size={16} />
             {isAr ? "تواصل عبر واتساب" : "Message on WhatsApp"}

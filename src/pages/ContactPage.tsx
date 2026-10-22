@@ -59,13 +59,13 @@ export default function ContactPage() {
         subtitle={t.contactPage.subtitle}
       />
 
-      <section className="mx-auto max-w-2xl px-5 pb-24">
+      <section className="mx-auto max-w-2xl px-4 sm:px-5 pb-20 sm:pb-24">
         <Reveal>
           <a
             href="https://wa.me/201101970882"
             target="_blank"
             rel="noreferrer"
-            className="mb-8 flex items-center justify-center gap-2 rounded-xl border border-(--color-emerald)/30 bg-(--color-emerald)/5 px-5 py-3.5 text-sm font-medium text-(--color-emerald) transition-colors hover:bg-(--color-emerald)/10"
+            className="mb-8 flex items-center justify-center gap-3 rounded-xl border border-(--color-emerald)/30 bg-(--color-emerald)/5 px-5 py-4 text-sm font-medium text-(--color-emerald) transition-colors hover:bg-(--color-emerald)/10"
           >
             <MessageCircle size={17} />
             {t.cta.secondary}
@@ -90,7 +90,7 @@ export default function ContactPage() {
                   id="name"
                   name="name"
                   required
-                  className="w-full rounded-lg border border-(--color-border) bg-white/[0.02] px-4 py-3 text-sm text-(--color-ink) outline-none transition-colors focus:border-(--color-indigo-soft)"
+                  className="w-full rounded-lg border border-(--color-border) bg-white/[0.02] px-4 py-3.5 text-sm text-(--color-ink) outline-none transition-colors focus:border-(--color-indigo-soft) placeholder:text-(--color-muted)"
                 />
               </div>
               <div>
@@ -102,7 +102,7 @@ export default function ContactPage() {
                   name="email"
                   type="email"
                   required
-                  className="w-full rounded-lg border border-(--color-border) bg-white/[0.02] px-4 py-3 text-sm text-(--color-ink) outline-none transition-colors focus:border-(--color-indigo-soft)"
+                  className="w-full rounded-lg border border-(--color-border) bg-white/[0.02] px-4 py-3.5 text-sm text-(--color-ink) outline-none transition-colors focus:border-(--color-indigo-soft) placeholder:text-(--color-muted)"
                 />
               </div>
             </div>
@@ -114,7 +114,7 @@ export default function ContactPage() {
               <select
                 id="projectType"
                 name="projectType"
-                className="w-full rounded-lg border border-(--color-border) bg-white/[0.02] px-4 py-3 text-sm text-(--color-ink) outline-none transition-colors focus:border-(--color-indigo-soft)"
+                className="w-full appearance-none rounded-lg border border-(--color-border) bg-(--color-surface) px-4 py-3.5 text-sm text-(--color-ink) outline-none transition-colors focus:border-(--color-indigo-soft)"
                 defaultValue=""
               >
                 <option value="" disabled>
@@ -137,7 +137,7 @@ export default function ContactPage() {
                 name="message"
                 required
                 rows={5}
-                className="w-full resize-none rounded-lg border border-(--color-border) bg-white/[0.02] px-4 py-3 text-sm text-(--color-ink) outline-none transition-colors focus:border-(--color-indigo-soft)"
+                className="w-full resize-none rounded-lg border border-(--color-border) bg-white/[0.02] px-4 py-3.5 text-sm text-(--color-ink) outline-none transition-colors focus:border-(--color-indigo-soft) leading-relaxed"
               />
             </div>
 
@@ -145,7 +145,7 @@ export default function ContactPage() {
               type="submit"
               disabled={status === "sending"}
               whileTap={{ scale: 0.98 }}
-              className="mt-6 flex w-full items-center justify-center gap-2 rounded-lg bg-gradient-to-r from-(--color-indigo) to-(--color-cyan) px-6 py-3.5 text-sm font-medium text-white transition-opacity disabled:opacity-60"
+              className="mt-6 flex w-full items-center justify-center gap-2 rounded-xl bg-gradient-to-r from-(--color-indigo) to-(--color-cyan) px-6 py-4 text-sm font-semibold text-white transition-opacity disabled:opacity-60"
             >
               {status === "sending" ? (
                 t.contactPage.sending

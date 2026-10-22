@@ -13,11 +13,11 @@ export default function SectionHeader({ eyebrow, title, subtitle, align = "cente
       <span className="mono-badge inline-block rounded-full border border-(--color-border) px-3 py-1 text-xs text-(--color-cyan)">
         {eyebrow}
       </span>
-      <h2 className="mt-4 text-3xl font-semibold tracking-tight text-(--color-ink) sm:text-4xl">
+      <h2 className="mt-3 sm:mt-4 text-2xl sm:text-4xl font-semibold tracking-tight text-(--color-ink)">
         {title}
       </h2>
       {subtitle && (
-        <p className="mt-4 text-base leading-relaxed text-(--color-muted)">{subtitle}</p>
+        <p className="mt-3 sm:mt-4 text-sm sm:text-base leading-relaxed text-(--color-muted)">{subtitle}</p>
       )}
     </Reveal>
   );

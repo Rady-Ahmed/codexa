@@ -75,8 +75,8 @@ export default function BlogPage() {
         title={isAr ? "المدونة التقنية" : "Our Journal"} 
       />
 
-      <section className="mx-auto max-w-7xl px-5 pb-24">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <section className="mx-auto max-w-7xl px-4 sm:px-5 pb-16 sm:pb-24">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-6">
           {posts.map((post, index) => (
             <Reveal key={post.id} delay={index * 0.1}>
               <motion.article 
@@ -84,7 +84,7 @@ export default function BlogPage() {
                 className={`group relative overflow-hidden rounded-3xl border border-(--color-border) bg-white/[0.02] flex flex-col h-full ${post.featured ? 'md:col-span-2' : ''}`}
               >
                 {/* Image */}
-                <div className={`relative w-full overflow-hidden ${post.featured ? 'h-64 sm:h-80' : 'h-48'}`}>
+                <div className={`relative w-full overflow-hidden ${post.featured ? 'h-52 sm:h-80' : 'h-44 sm:h-48'}`}>
                   <div className="absolute inset-0 bg-black/20 z-10 transition-opacity group-hover:opacity-0" />
                   <img 
                     src={post.image} 
@@ -92,26 +92,26 @@ export default function BlogPage() {
                     className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                     loading="lazy"
                   />
-                  <div className="absolute top-4 left-4 z-20 rounded-full bg-black/60 backdrop-blur-md px-3 py-1 text-xs font-semibold text-white">
+                  <div className="absolute top-3.5 left-3.5 z-20 rounded-full bg-black/60 backdrop-blur-md px-3 py-1 text-xs font-semibold text-white">
                     {post.category}
                   </div>
                 </div>
 
                 {/* Content */}
-                <div className="p-6 flex flex-col flex-1">
-                  <div className="flex items-center gap-4 text-xs text-(--color-muted) mb-3">
-                    <span className="flex items-center gap-1"><Calendar size={14} /> {post.date}</span>
-                    <span className="flex items-center gap-1"><Clock size={14} /> {post.readTime}</span>
+                <div className="p-4 sm:p-6 flex flex-col flex-1">
+                  <div className="flex items-center gap-3 sm:gap-4 text-xs text-(--color-muted) mb-2.5 sm:mb-3">
+                    <span className="flex items-center gap-1"><Calendar size={13} /> {post.date}</span>
+                    <span className="flex items-center gap-1"><Clock size={13} /> {post.readTime}</span>
                   </div>
                   
-                  <h3 className={`font-bold text-white mb-3 transition-colors group-hover:text-(--color-cyan) ${post.featured ? 'text-2xl sm:text-3xl' : 'text-xl'}`}>
+                  <h3 className={`font-bold text-white mb-2.5 sm:mb-3 transition-colors group-hover:text-(--color-cyan) ${post.featured ? 'text-lg sm:text-3xl' : 'text-base sm:text-xl'}`}>
                     <Link to={path(`/blog/${post.id}`)} className="focus:outline-none">
                       <span className="absolute inset-0" aria-hidden="true" />
                       {post.title}
                     </Link>
                   </h3>
                   
-                  <p className="text-(--color-muted) text-sm leading-relaxed mb-6 flex-1">
+                  <p className="text-(--color-muted) text-xs sm:text-sm leading-relaxed mb-4 sm:mb-6 flex-1">
                     {post.excerpt}
                   </p>
                   

@@ -77,20 +77,20 @@ export default function PricingPage() {
       <PageHeader eyebrow={t.pricing.eyebrow} title={t.pricing.title} subtitle={t.pricing.subtitle} />
 
       {/* Billing Toggle */}
-      <section className="mx-auto max-w-6xl px-5 pb-4 flex flex-col items-center gap-4">
+      <section className="mx-auto max-w-6xl px-4 sm:px-5 pb-4 flex flex-col items-center gap-4">
         {/* Free Offer Banner */}
         <Reveal>
-          <div className="inline-flex items-center gap-2 rounded-full border border-(--color-emerald)/30 bg-(--color-emerald)/10 px-4 py-1.5 text-sm font-medium text-(--color-emerald)">
-            <Zap size={14} className="fill-current" />
+          <div className="inline-flex items-center gap-2 rounded-full border border-(--color-emerald)/30 bg-(--color-emerald)/10 px-3.5 py-1.5 text-xs sm:text-sm font-medium text-(--color-emerald)">
+            <Zap size={14} className="fill-current shrink-0" />
             {t.pricing.freeOffer}
           </div>
         </Reveal>
 
         <Reveal delay={0.1}>
-          <div className="flex items-center gap-3 rounded-xl border border-(--color-border) bg-white/3 p-1.5 mt-2">
+          <div className="flex items-center gap-2 sm:gap-3 rounded-xl border border-(--color-border) bg-white/3 p-1.5 mt-2">
             <button
               onClick={() => setBillingAnnual(false)}
-              className={`rounded-lg px-4 py-2 text-sm font-medium transition-all ${
+              className={`rounded-lg px-3 sm:px-4 py-2 text-xs sm:text-sm font-medium transition-all ${
                 !billingAnnual ? "bg-gradient-to-r from-(--color-indigo) to-(--color-cyan) text-white" : "text-(--color-muted) hover:text-(--color-ink)"
               }`}
             >
@@ -98,12 +98,12 @@ export default function PricingPage() {
             </button>
             <button
               onClick={() => setBillingAnnual(true)}
-              className={`flex items-center gap-2 rounded-lg px-4 py-2 text-sm font-medium transition-all ${
+              className={`flex items-center gap-1.5 sm:gap-2 rounded-lg px-3 sm:px-4 py-2 text-xs sm:text-sm font-medium transition-all ${
                 billingAnnual ? "bg-gradient-to-r from-(--color-indigo) to-(--color-cyan) text-white" : "text-(--color-muted) hover:text-(--color-ink)"
               }`}
             >
               {lang === "ar" ? "صيانة شهرية" : "Monthly retainer"}
-              <span className="rounded-full bg-white/20 px-2 py-0.5 text-[10px] font-bold">
+              <span className="rounded-full bg-white/20 px-1.5 sm:px-2 py-0.5 text-[10px] font-bold">
                 {lang === "ar" ? "وفّر 20%" : "Save 20%"}
               </span>
             </button>
@@ -112,7 +112,7 @@ export default function PricingPage() {
       </section>
 
       {/* Pricing Cards */}
-      <section className="mx-auto max-w-6xl px-5 pb-8">
+      <section className="mx-auto max-w-6xl px-4 sm:px-5 pb-8">
         <div className="grid grid-cols-1 gap-6 lg:grid-cols-3">
           {displayedTiers.map((tier, i) => {
             const isPopular = i === 1;
@@ -121,7 +121,7 @@ export default function PricingPage() {
                 <motion.div
                   whileHover={{ y: -6 }}
                   transition={{ type: "spring", stiffness: 300, damping: 24 }}
-                  className={`relative flex h-full flex-col overflow-hidden rounded-2xl border p-7 ${
+                  className={`relative flex h-full flex-col overflow-hidden rounded-2xl border p-5 sm:p-7 ${
                     isPopular
                       ? "border-(--color-indigo)/50 bg-gradient-to-b from-(--color-indigo)/[0.1] to-transparent"
                       : "border-(--color-border) bg-white/[0.015]"
@@ -183,9 +183,9 @@ export default function PricingPage() {
       </section>
 
       {/* FAQ */}
-      <section className="mx-auto max-w-3xl px-5 pb-16">
+      <section className="mx-auto max-w-3xl px-4 sm:px-5 pb-16">
         <Reveal>
-          <h2 className="text-center text-2xl font-bold text-(--color-ink) mb-10">
+          <h2 className="text-center text-xl sm:text-2xl font-bold text-(--color-ink) mb-8 sm:mb-10">
             {lang === "ar" ? "أسئلة حول التسعير" : "Pricing questions"}
           </h2>
         </Reveal>

@@ -63,7 +63,7 @@ function ServiceBentoCard({
       whileHover={{ y: -6, scale: 1.012 }}
       whileTap={{ scale: 0.98 }}
       transition={{ type: "spring", stiffness: 350, damping: 25 }}
-      className="group relative flex h-full cursor-pointer flex-col overflow-hidden rounded-3xl border border-white/[0.08] bg-[#0c0c16]/70 p-8 backdrop-blur-xl transition-all duration-300 hover:border-white/20 hover:shadow-[0_16px_40px_rgba(0,0,0,0.5)]"
+      className="group relative flex h-full cursor-pointer flex-col overflow-hidden rounded-3xl border border-white/[0.08] bg-[#0c0c16]/70 p-5 sm:p-8 backdrop-blur-xl transition-all duration-300 hover:border-white/20 hover:shadow-[0_16px_40px_rgba(0,0,0,0.5)]"
     >
       {/* ── Dynamic Mouse-Follow Spotlight ── */}
       <motion.div
@@ -89,11 +89,11 @@ function ServiceBentoCard({
 
       <div className="relative z-10 flex h-full flex-col">
         {/* Header: Icon & Arrow */}
-        <div className="flex items-start justify-between mb-8">
+        <div className="flex items-start justify-between mb-5 sm:mb-8">
           <motion.div
             whileHover={{ scale: 1.1, rotate: [0, -6, 6, 0] }}
             transition={{ duration: 0.4 }}
-            className="flex h-14 w-14 items-center justify-center rounded-2xl shadow-lg transition-transform duration-300"
+            className="flex h-12 w-12 sm:h-14 sm:w-14 items-center justify-center rounded-2xl shadow-lg transition-transform duration-300"
             style={{
               background: `linear-gradient(135deg, ${accent.from}25, ${accent.to}15)`,
               border: `1px solid ${accent.from}40`,
@@ -101,14 +101,14 @@ function ServiceBentoCard({
               boxShadow: `0 8px 20px ${accent.glow}`,
             }}
           >
-            <Icon size={28} />
+            <Icon size={24} className="sm:w-7 sm:h-7" />
           </motion.div>
 
           <div
-            className="flex h-10 w-10 items-center justify-center rounded-full bg-white/5 text-white/40 transition-all duration-300 group-hover:bg-white/15 group-hover:text-white group-hover:translate-x-1 rtl:group-hover:-translate-x-1 group-hover:-translate-y-0.5"
+            className="flex h-9 w-9 sm:h-10 sm:w-10 items-center justify-center rounded-full bg-white/5 text-white/40 transition-all duration-300 group-hover:bg-white/15 group-hover:text-white group-hover:translate-x-1 rtl:group-hover:-translate-x-1 group-hover:-translate-y-0.5"
             style={{ color: accent.from }}
           >
-            <ArrowUpRight size={20} className={lang === "ar" ? "-scale-x-100" : ""} />
+            <ArrowUpRight size={18} className={lang === "ar" ? "-scale-x-100" : ""} />
           </div>
         </div>
 
@@ -121,14 +121,14 @@ function ServiceBentoCard({
           </div>
           <h3
             className={`font-bold text-white tracking-tight ${
-              isLarge ? "text-3xl" : "text-2xl"
-            } mb-4 transition-colors group-hover:text-white`}
+              isLarge ? "text-2xl sm:text-3xl" : "text-xl sm:text-2xl"
+            } mb-3 sm:mb-4 transition-colors group-hover:text-white`}
           >
             <span className="bg-gradient-to-r from-white to-white group-hover:from-white group-hover:to-(--color-cyan) bg-clip-text transition-all duration-300">
               {category.title}
             </span>
           </h3>
-          <p className="text-sm sm:text-base leading-relaxed text-(--color-muted) mb-8">
+          <p className="text-sm sm:text-base leading-relaxed text-(--color-muted) mb-5 sm:mb-8">
             {category.desc}
           </p>
         </div>
@@ -175,7 +175,7 @@ export default function Services({ showHeader = true }: { showHeader?: boolean }
   ];
 
   return (
-    <section className="mx-auto max-w-7xl px-5 py-24 sm:py-32">
+    <section className="mx-auto max-w-7xl px-4 sm:px-5 py-16 sm:py-32">
       {showHeader && (
         <SectionHeader
           eyebrow={`${t.services.eyebrow} & ${t.services.coreSpecializations}`}
@@ -185,8 +185,8 @@ export default function Services({ showHeader = true }: { showHeader?: boolean }
       )}
 
       <div
-        className={`grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-6 ${
-          showHeader ? "mt-16" : ""
+        className={`grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-4 sm:gap-6 ${
+          showHeader ? "mt-10 sm:mt-16" : ""
         }`}
       >
         {t.services.categories.map((category, i) => {

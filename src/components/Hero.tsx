@@ -145,7 +145,7 @@ export default function Hero() {
       {/* ── Scroll fade wrapper ── */}
       <motion.div
         style={{ y: contentY, opacity }}
-        className="relative z-10 mx-auto grid max-w-6xl grid-cols-1 items-center gap-14 px-5 pt-36 pb-20 sm:pt-44 sm:pb-28 lg:grid-cols-[1.15fr_0.85fr] lg:gap-8"
+        className="relative z-10 mx-auto grid max-w-6xl grid-cols-1 items-center gap-10 px-4 pt-28 pb-16 sm:px-5 sm:pt-44 sm:pb-28 lg:grid-cols-[1.15fr_0.85fr] lg:gap-8"
       >
         {/* ── LEFT: Copy ── */}
         <div>
@@ -177,7 +177,7 @@ export default function Hero() {
                 transition: { staggerChildren: 0.07, delayChildren: 0.15 },
               },
             }}
-            className="mt-6 text-4xl font-bold leading-[1.12] tracking-tight text-(--color-ink) sm:text-[3.6rem]"
+            className="mt-6 text-[2.1rem] font-bold leading-[1.12] tracking-tight text-(--color-ink) sm:text-4xl lg:text-[3.6rem]"
           >
             {/* Line 1 — special-case the circled word */}
             <span className="block">
@@ -236,7 +236,7 @@ export default function Hero() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.8 }}
-            className="mt-3 flex items-center gap-2 text-base text-(--color-muted) sm:text-lg"
+            className="mt-3 flex items-center gap-2 text-sm text-(--color-muted) sm:text-base lg:text-lg"
           >
             <span>{t.hero.weBuild}</span>
             <span className="font-semibold text-(--color-cyan)">
@@ -260,7 +260,7 @@ export default function Hero() {
                 transition: { staggerChildren: 0.03, delayChildren: 0.6 },
               },
             }}
-            className="mt-5 max-w-lg text-base leading-relaxed text-(--color-muted) sm:text-lg"
+            className="mt-5 max-w-lg text-sm leading-relaxed text-(--color-muted) sm:text-base lg:text-lg"
           >
             {t.hero.subtitle.split("").map((char, i) => (
               <motion.span
@@ -280,11 +280,11 @@ export default function Hero() {
             initial={{ opacity: 0, y: 16 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.45 }}
-            className="mt-9 flex flex-wrap items-center gap-4"
+            className="mt-8 flex flex-col sm:flex-row items-stretch sm:items-center gap-3 sm:gap-4"
           >
             <Link
               to={path("/contact")}
-              className="group relative flex items-center gap-2 overflow-hidden rounded-xl px-6 py-3.5 text-sm font-semibold text-white transition-transform hover:scale-[1.03] active:scale-[0.98]"
+              className="group relative flex items-center justify-center gap-2 overflow-hidden rounded-xl px-6 py-3.5 text-sm font-semibold text-white transition-transform hover:scale-[1.03] active:scale-[0.98] w-full sm:w-auto"
               style={{ background: "linear-gradient(135deg, #6C4CF1 0%, #22D3EE 100%)" }}
             >
               <motion.span
@@ -298,7 +298,7 @@ export default function Hero() {
             </Link>
             <Link
               to={path("/services")}
-              className="group flex items-center gap-2 rounded-xl border border-(--color-border) bg-white/[0.03] px-6 py-3.5 text-sm font-medium text-(--color-ink) backdrop-blur-sm transition-all hover:border-(--color-indigo-soft) hover:bg-white/[0.07]"
+              className="group flex items-center justify-center gap-2 rounded-xl border border-(--color-border) bg-white/[0.03] px-6 py-3.5 text-sm font-medium text-(--color-ink) backdrop-blur-sm transition-all hover:border-(--color-indigo-soft) hover:bg-white/[0.07] w-full sm:w-auto"
             >
               {t.hero.ctaSecondary}
               <Arrow size={14} className="opacity-40 transition-all rtl:group-hover:-translate-x-1 group-hover:translate-x-1 group-hover:opacity-80" />
@@ -336,7 +336,7 @@ export default function Hero() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.6, delay: 0.7 }}
-            className="mt-12 grid max-w-2xl grid-cols-3 sm:grid-cols-5 gap-4 border-t border-(--color-border) pt-8"
+            className="mt-10 grid grid-cols-3 sm:grid-cols-5 gap-3 sm:gap-4 border-t border-(--color-border) pt-6"
           >
             {[
               { num: t.hero.stat1n, label: t.hero.stat1l },
@@ -346,10 +346,10 @@ export default function Hero() {
               { num: t.hero.stat5n, label: t.hero.stat5l },
             ].map(({ num, label }) => (
               <div key={label} className="flex flex-col">
-                <div className="mono-badge text-xl sm:text-2xl font-bold gradient-text leading-none">
+                <div className="mono-badge text-lg sm:text-xl lg:text-2xl font-bold gradient-text leading-none">
                   <SmartCountUp value={num} />
                 </div>
-                <div className="mt-1.5 text-xs text-(--color-muted) leading-snug">{label}</div>
+                <div className="mt-1 text-[0.65rem] sm:text-xs text-(--color-muted) leading-snug">{label}</div>
               </div>
             ))}
           </motion.div>
@@ -361,7 +361,7 @@ export default function Hero() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.8, delay: 0.3 }}
-          className="relative hidden lg:flex items-center justify-center w-full"
+          className="relative hidden lg:flex items-center justify-center w-full" aria-hidden
           style={{ minHeight: "560px", perspective: "1500px" }}
         >
           {/* Ambient Glow */}

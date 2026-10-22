@@ -45,26 +45,26 @@ export default function ServiceCategoryPage() {
       />
 
       {/* Main Details Section */}
-      <section className="mx-auto max-w-6xl px-5 py-12 lg:py-20">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
+      <section className="mx-auto max-w-6xl px-4 sm:px-5 py-8 sm:py-16 lg:py-20">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-16">
           
           {/* Left Column: Sub-Services */}
-          <div className="flex flex-col gap-6">
+          <div className="flex flex-col gap-5 sm:gap-6">
             <Reveal>
-              <div className="mb-4 inline-flex h-16 w-16 items-center justify-center rounded-2xl bg-gradient-to-br from-(--color-indigo)/20 to-(--color-cyan)/20 text-(--color-cyan)">
-                <Icon size={32} />
+              <div className="mb-4 inline-flex h-12 w-12 sm:h-16 sm:w-16 items-center justify-center rounded-2xl bg-gradient-to-br from-(--color-indigo)/20 to-(--color-cyan)/20 text-(--color-cyan)">
+                <Icon size={26} className="sm:w-8 sm:h-8" />
               </div>
-              <h2 className="text-2xl font-bold text-(--color-ink) mb-6">
+              <h2 className="text-xl sm:text-2xl font-bold text-(--color-ink) mb-4 sm:mb-6">
                 {lang === "ar" ? "ماذا نقدم في هذا القسم؟" : "What we offer in this section"}
               </h2>
             </Reveal>
             
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4">
               {category.items.map((item: any, idx: number) => (
                 <Reveal key={idx} delay={idx * 0.1}>
-                  <SpotlightCard className="h-full p-6 hover:border-(--color-cyan)/30 transition-colors">
-                    <h3 className="mb-2 text-lg font-semibold text-(--color-ink)">{item.title}</h3>
-                    <p className="text-sm leading-relaxed text-(--color-muted)">{item.desc}</p>
+                  <SpotlightCard className="h-full p-4 sm:p-6 hover:border-(--color-cyan)/30 transition-colors">
+                    <h3 className="mb-2 text-base sm:text-lg font-semibold text-(--color-ink)">{item.title}</h3>
+                    <p className="text-xs sm:text-sm leading-relaxed text-(--color-muted)">{item.desc}</p>
                   </SpotlightCard>
                 </Reveal>
               ))}
@@ -72,20 +72,20 @@ export default function ServiceCategoryPage() {
           </div>
 
           {/* Right Column: Benefits & Tech Stack */}
-          <div className="flex flex-col gap-12">
+          <div className="flex flex-col gap-8 sm:gap-12">
             
             {/* Benefits */}
             {category.benefits && (
               <Reveal delay={0.2}>
-                <div className="rounded-2xl border border-(--color-border) bg-white/2 p-8 shadow-sm backdrop-blur-xl">
-                  <h3 className="mb-6 text-xl font-bold text-(--color-ink)">
+                <div className="rounded-2xl border border-(--color-border) bg-white/2 p-5 sm:p-8 shadow-sm backdrop-blur-xl">
+                  <h3 className="mb-4 sm:mb-6 text-lg sm:text-xl font-bold text-(--color-ink)">
                     {lang === "ar" ? "لماذا تختارنا لهذا القسم؟" : "Why choose us for this?"}
                   </h3>
-                  <ul className="flex flex-col gap-4">
+                  <ul className="flex flex-col gap-3 sm:gap-4">
                     {category.benefits.map((benefit: string, idx: number) => (
-                      <li key={idx} className="flex items-start gap-3">
-                        <CheckCircle2 className="mt-0.5 shrink-0 text-(--color-cyan)" size={18} />
-                        <span className="text-sm leading-relaxed text-(--color-muted)">{benefit}</span>
+                      <li key={idx} className="flex items-start gap-2.5 sm:gap-3">
+                        <CheckCircle2 className="mt-0.5 shrink-0 text-(--color-cyan)" size={16} />
+                        <span className="text-xs sm:text-sm leading-relaxed text-(--color-muted)">{benefit}</span>
                       </li>
                     ))}
                   </ul>

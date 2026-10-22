@@ -128,10 +128,10 @@ export default function WhyUs() {
       {/* Ambient background glow */}
       <div className="pointer-events-none absolute left-1/2 top-1/2 -z-10 h-[700px] w-[700px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-[radial-gradient(circle,rgba(108,76,241,0.08)_0%,transparent_70%)]" />
 
-      <div className="mx-auto max-w-6xl px-5">
+      <div className="mx-auto max-w-6xl px-4 sm:px-5">
         <SectionHeader eyebrow={t.why.eyebrow} title={t.why.title} />
 
-        <div className="relative mt-24 min-h-[520px]">
+        <div className="relative mt-12 sm:mt-24 min-h-[auto] sm:min-h-[520px]">
 
           {/* ─── SVG Connector Layer ─── */}
           <div className="pointer-events-none absolute inset-0 hidden md:block">
@@ -288,7 +288,7 @@ export default function WhyUs() {
             initial="hidden"
             whileInView="show"
             viewport={{ once: true }}
-            className="grid grid-cols-1 gap-6 md:grid-cols-2 md:gap-x-72 md:gap-y-20 relative z-10"
+            className="grid grid-cols-2 gap-4 sm:gap-6 md:grid-cols-2 md:gap-x-72 md:gap-y-20 relative z-10"
           >
             {t.why.items.map((item, i) => {
               const Icon = icons[i];
@@ -303,7 +303,7 @@ export default function WhyUs() {
                   variants={itemVariants}
                   whileHover={{ scale: 1.04, y: -6 }}
                   transition={{ type: "spring", stiffness: 380, damping: 28 }}
-                  className={`group relative flex max-w-[280px] flex-col overflow-hidden rounded-2xl border border-white/[0.07] p-6 backdrop-blur-sm ${alignClass}`}
+                  className={`group relative flex max-w-full sm:max-w-[280px] flex-col overflow-hidden rounded-2xl border border-white/[0.07] p-5 sm:p-6 backdrop-blur-sm ${alignClass}`}
                   style={{
                     background: "linear-gradient(135deg, rgba(108,76,241,0.07) 0%, rgba(10,10,20,0.6) 100%)",
                     boxShadow: "inset 0 1px 0 rgba(255,255,255,0.05)",

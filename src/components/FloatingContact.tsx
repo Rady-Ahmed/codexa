@@ -70,7 +70,7 @@ export default function FloatingContact() {
   const { lang } = useLang();
 
   return (
-    <div className="fixed bottom-6 end-6 z-50 flex flex-col items-end gap-3">
+    <div className="fixed bottom-5 end-4 sm:bottom-6 sm:end-6 z-50 flex flex-col items-end gap-2 sm:gap-3">
       {/* Social buttons */}
       <AnimatePresence>
         {open &&
@@ -126,7 +126,7 @@ export default function FloatingContact() {
         whileHover={{ scale: 1.08 }}
         whileTap={{ scale: 0.94 }}
         aria-label="Toggle contact menu"
-        className="relative flex h-14 w-14 items-center justify-center rounded-full shadow-xl shadow-black/40 transition-all"
+        className="relative flex h-12 w-12 sm:h-14 sm:w-14 items-center justify-center rounded-full shadow-xl shadow-black/40 transition-all"
         style={{
           background: open
             ? "linear-gradient(135deg, #ef4444, #dc2626)"

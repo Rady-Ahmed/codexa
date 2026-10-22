@@ -31,7 +31,7 @@ export default function PortfolioCard({
       <Link
         to={path(`/portfolio/${project.slug}`)}
         onMouseMove={handleMouseMove}
-        className="group relative flex h-full flex-col justify-between overflow-hidden rounded-2xl border border-white/[0.08] bg-[#0c0c16]/70 p-6 backdrop-blur-xl transition-all duration-300 hover:border-white/20 hover:shadow-[0_16px_40px_rgba(0,0,0,0.5)]"
+        className="group relative flex h-full flex-col justify-between overflow-hidden rounded-2xl border border-white/[0.08] bg-[#0c0c16]/70 p-4 sm:p-6 backdrop-blur-xl transition-all duration-300 hover:border-white/20 hover:shadow-[0_16px_40px_rgba(0,0,0,0.5)]"
       >
         {/* Dynamic Project-Accent Spotlight */}
         <motion.div
@@ -134,7 +134,7 @@ export default function PortfolioCard({
             </div>
 
             <span
-              className="text-xs font-semibold opacity-0 transition-all duration-300 group-hover:opacity-100 group-hover:translate-x-1 rtl:group-hover:-translate-x-1"
+              className="text-xs font-semibold opacity-80 sm:opacity-0 transition-all duration-300 group-hover:opacity-100 group-hover:translate-x-1 rtl:group-hover:-translate-x-1"
               style={{ color: project.color }}
             >
               {t.portfolio.viewProject} →

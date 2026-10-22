@@ -58,22 +58,22 @@ export default function ROICalculator() {
   };
 
   return (
-    <section className="mx-auto max-w-5xl px-5 py-24">
+    <section className="mx-auto max-w-5xl px-4 sm:px-5 py-16 sm:py-24">
       <SectionHeader eyebrow={t.eyebrow} title={t.title} subtitle={t.subtitle} />
 
-      <Reveal delay={0.2} className="mt-16">
-        <div className="grid gap-12 lg:grid-cols-2 rounded-3xl border border-(--color-border) bg-white/[0.015] p-6 sm:p-10 lg:p-12 shadow-2xl backdrop-blur-sm relative overflow-hidden">
+      <Reveal delay={0.2} className="mt-12 sm:mt-16">
+        <div className="grid gap-8 sm:gap-12 lg:grid-cols-2 rounded-3xl border border-(--color-border) bg-white/[0.015] p-5 sm:p-10 lg:p-12 shadow-2xl backdrop-blur-sm relative overflow-hidden">
           
           {/* Background decoration */}
           <div className="absolute top-0 right-0 -mr-20 -mt-20 w-72 h-72 rounded-full bg-(--color-indigo)/10 blur-[80px] pointer-events-none" />
           <div className="absolute bottom-0 left-0 -ml-20 -mb-20 w-72 h-72 rounded-full bg-(--color-cyan)/10 blur-[80px] pointer-events-none" />
 
           {/* Inputs Section */}
-          <div className="relative z-10 flex flex-col justify-center gap-8 border-b lg:border-b-0 lg:border-e border-(--color-border) pb-10 lg:pb-0 lg:pe-10 rtl:lg:border-e-0 rtl:lg:border-s rtl:lg:ps-10">
+          <div className="relative z-10 flex flex-col justify-center gap-6 sm:gap-8 border-b lg:border-b-0 lg:border-e border-(--color-border) pb-8 sm:pb-10 lg:pb-0 lg:pe-10 rtl:lg:border-e-0 rtl:lg:border-s rtl:lg:ps-10">
             
-            <div className="space-y-4">
+            <div className="space-y-3 sm:space-y-4">
               <div className="flex justify-between items-center">
-                <label className="text-sm font-medium text-(--color-ink)">{t.employees}</label>
+                <label className="text-xs sm:text-sm font-medium text-(--color-ink)">{t.employees}</label>
                 <span className="text-(--color-cyan) font-bold">{employees}</span>
               </div>
               <input 
@@ -83,9 +83,9 @@ export default function ROICalculator() {
               />
             </div>
 
-            <div className="space-y-4">
+            <div className="space-y-3 sm:space-y-4">
               <div className="flex justify-between items-center">
-                <label className="text-sm font-medium text-(--color-ink)">{t.salary}</label>
+                <label className="text-xs sm:text-sm font-medium text-(--color-ink)">{t.salary}</label>
                 <span className="text-(--color-cyan) font-bold">{formatCurrency(salary)}</span>
               </div>
               <input 
@@ -95,9 +95,9 @@ export default function ROICalculator() {
               />
             </div>
 
-            <div className="space-y-4">
+            <div className="space-y-3 sm:space-y-4">
               <div className="flex justify-between items-center">
-                <label className="text-sm font-medium text-(--color-ink)">{t.wastedHours}</label>
+                <label className="text-xs sm:text-sm font-medium text-(--color-ink)">{t.wastedHours}</label>
                 <span className="text-(--color-cyan) font-bold">{wastedHours}</span>
               </div>
               <input 
@@ -110,30 +110,30 @@ export default function ROICalculator() {
           </div>
 
           {/* Results Section */}
-          <div className="relative z-10 flex flex-col justify-center gap-8">
-            <div className="rounded-2xl bg-white/5 p-6 border border-white/5">
-              <h3 className="text-sm font-medium text-(--color-muted) mb-2">{t.monthlyLoss}</h3>
+          <div className="relative z-10 flex flex-col justify-center gap-6 sm:gap-8">
+            <div className="rounded-2xl bg-white/5 p-5 sm:p-6 border border-white/5">
+              <h3 className="text-xs sm:text-sm font-medium text-(--color-muted) mb-2">{t.monthlyLoss}</h3>
               <motion.div 
                 key={monthlyLoss}
                 initial={{ opacity: 0, y: -10 }}
                 animate={{ opacity: 1, y: 0 }}
-                className="text-4xl font-bold text-red-400"
+                className="text-2xl sm:text-4xl font-bold text-red-400 break-words"
               >
                 {formatCurrency(monthlyLoss)}
               </motion.div>
             </div>
 
-            <div className="rounded-2xl bg-gradient-to-br from-(--color-indigo)/20 to-(--color-cyan)/20 p-6 border border-(--color-cyan)/30 shadow-[0_0_30px_rgba(34,211,238,0.15)] relative overflow-hidden">
+            <div className="rounded-2xl bg-gradient-to-br from-(--color-indigo)/20 to-(--color-cyan)/20 p-5 sm:p-6 border border-(--color-cyan)/30 shadow-[0_0_30px_rgba(34,211,238,0.15)] relative overflow-hidden">
               {/* Shine effect */}
               <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent -translate-x-full animate-[shimmer_3s_infinite]" />
               
-              <h3 className="text-sm font-medium text-(--color-cyan) mb-2">{t.annualLoss}</h3>
+              <h3 className="text-xs sm:text-sm font-medium text-(--color-cyan) mb-2">{t.annualLoss}</h3>
               <motion.div 
                 key={annualSavings}
                 initial={{ opacity: 0, scale: 0.9 }}
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{ type: "spring", stiffness: 200, damping: 15 }}
-                className="text-5xl sm:text-6xl font-black text-(--color-ink) tracking-tight drop-shadow-sm"
+                className="text-3xl sm:text-5xl lg:text-6xl font-black text-(--color-ink) tracking-tight drop-shadow-sm break-words"
               >
                 {formatCurrency(annualSavings)}
               </motion.div>

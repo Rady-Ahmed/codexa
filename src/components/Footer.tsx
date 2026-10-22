@@ -37,13 +37,13 @@ export default function Footer() {
       <div className="mx-auto max-w-7xl px-5 pt-24 pb-12">
         {/* ── Mega CTA Section ── */}
         <div className="flex flex-col items-center justify-center text-center mb-28">
-          <h2 className="text-5xl sm:text-7xl md:text-8xl lg:text-[7rem] font-black tracking-tight text-white/5 uppercase leading-none select-none relative group cursor-default">
+          <h2 className="text-4xl sm:text-6xl md:text-8xl lg:text-[7rem] font-black tracking-tight text-white/5 uppercase leading-none select-none relative group cursor-default">
             {megaText}
             {/* Hover shine effect */}
             <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent -translate-x-full opacity-0 transition-opacity duration-300 group-hover:opacity-100 group-hover:animate-[shimmer_2s_infinite]"
                  style={{ WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent" }} />
           </h2>
-          <div className="-mt-6 sm:-mt-10 md:-mt-12 relative z-10">
+          <div className="-mt-4 sm:-mt-8 md:-mt-12 relative z-10">
             <div className="flex flex-col items-center gap-6 rounded-3xl border border-white/10 bg-white/5 p-8 backdrop-blur-xl shadow-2xl max-w-xl mx-auto">
               <h3 className="text-xl font-bold text-white">{subscribeText}</h3>
               <a
@@ -61,28 +61,29 @@ export default function Footer() {
         </div>
 
         {/* ── Links Grid ── */}
-        <div className="grid grid-cols-1 gap-12 md:grid-cols-[2fr_1fr_1fr_1fr] lg:gap-16">
-          {/* Brand column */}
-          <div>
+        <div className="grid grid-cols-2 gap-8 sm:gap-12 md:grid-cols-[2fr_1fr_1fr_1fr] lg:gap-16">
+          {/* Brand column — full width on mobile */}
+          <div className="col-span-2 md:col-span-1">
             <Logo className="text-2xl" />
             <p className="mt-6 max-w-sm text-base leading-relaxed text-(--color-muted)">
               {t.footer.tagline}
             </p>
-            <div className="mt-8 flex items-center gap-4">
+            <div className="mt-6 flex items-center gap-3">
               <a href="https://github.com/Rady-Ahmed" target="_blank" rel="noreferrer"
-                className="flex h-12 w-12 items-center justify-center rounded-xl border border-white/10 bg-white/5 text-(--color-muted) transition-all hover:-translate-y-1 hover:bg-white/10 hover:text-white"
+                className="flex h-10 w-10 sm:h-12 sm:w-12 items-center justify-center rounded-xl border border-white/10 bg-white/5 text-(--color-muted) transition-all hover:-translate-y-1 hover:bg-white/10 hover:text-white"
                 aria-label="GitHub"><GithubIcon /></a>
               <a href="https://linkedin.com/in/rady-ahmed" target="_blank" rel="noreferrer"
-                className="flex h-12 w-12 items-center justify-center rounded-xl border border-white/10 bg-white/5 text-(--color-muted) transition-all hover:-translate-y-1 hover:bg-[#0a66c2]/20 hover:border-[#0a66c2]/50 hover:text-[#0a66c2]"
+                className="flex h-10 w-10 sm:h-12 sm:w-12 items-center justify-center rounded-xl border border-white/10 bg-white/5 text-(--color-muted) transition-all hover:-translate-y-1 hover:bg-[#0a66c2]/20 hover:border-[#0a66c2]/50 hover:text-[#0a66c2]"
                 aria-label="LinkedIn"><LinkedinIcon /></a>
               <a href="mailto:radyahmed117@gmail.com"
-                className="flex h-12 w-12 items-center justify-center rounded-xl border border-white/10 bg-white/5 text-(--color-muted) transition-all hover:-translate-y-1 hover:bg-red-500/20 hover:border-red-500/50 hover:text-red-400"
-                aria-label="Email"><Mail size={18} /></a>
+                className="flex h-10 w-10 sm:h-12 sm:w-12 items-center justify-center rounded-xl border border-white/10 bg-white/5 text-(--color-muted) transition-all hover:-translate-y-1 hover:bg-red-500/20 hover:border-red-500/50 hover:text-red-400"
+                aria-label="Email"><Mail size={16} /></a>
               <a href="https://wa.me/201101970882" target="_blank" rel="noreferrer"
-                className="flex h-12 w-12 items-center justify-center rounded-xl border border-white/10 bg-white/5 text-(--color-muted) transition-all hover:-translate-y-1 hover:bg-[#25D366]/20 hover:border-[#25D366]/50 hover:text-[#25D366]"
-                aria-label="WhatsApp"><Phone size={18} /></a>
+                className="flex h-10 w-10 sm:h-12 sm:w-12 items-center justify-center rounded-xl border border-white/10 bg-white/5 text-(--color-muted) transition-all hover:-translate-y-1 hover:bg-[#25D366]/20 hover:border-[#25D366]/50 hover:text-[#25D366]"
+                aria-label="WhatsApp"><Phone size={16} /></a>
             </div>
           </div>
+
 
           {/* Services column */}
           <div>
@@ -140,7 +141,7 @@ export default function Footer() {
         </div>
 
         {/* ── Bottom Bar ── */}
-        <div className="mt-20 flex flex-col items-center justify-between gap-4 border-t border-white/10 pt-8 text-xs text-(--color-muted-2) sm:flex-row">
+        <div className="mt-12 sm:mt-20 flex flex-col items-center justify-between gap-3 border-t border-white/10 pt-6 sm:pt-8 text-xs text-(--color-muted-2) sm:flex-row">
           <span className="mono-badge bg-white/5 border-white/10 px-4 py-2 rounded-full">© {new Date().getFullYear()} Codexa. {t.footer.rights}</span>
           <span className="flex items-center gap-2">Built with <span className="animate-pulse text-red-500">❤️</span> by Codexa Engineering</span>
         </div>

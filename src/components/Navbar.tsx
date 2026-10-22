@@ -46,7 +46,7 @@ export default function Navbar() {
         scrolled ? "py-3" : "py-5"
       }`}
     >
-      <div className="mx-auto max-w-6xl px-5">
+      <div className="mx-auto max-w-6xl px-3 sm:px-5">
         <div
           className={`flex items-center justify-between rounded-2xl px-4 py-3 transition-all duration-300 ${
             scrolled ? "glass shadow-lg shadow-black/20" : ""
@@ -130,7 +130,7 @@ export default function Navbar() {
           </div>
 
           <button
-            className="md:hidden text-(--color-ink)"
+            className="md:hidden flex h-10 w-10 items-center justify-center rounded-xl text-(--color-ink) transition-colors hover:bg-white/5 active:bg-white/10"
             onClick={() => setOpen((o) => !o)}
             aria-label="Menu"
             aria-expanded={open}
@@ -150,24 +150,30 @@ export default function Navbar() {
               transition={{ duration: 0.25, ease: "easeOut" }}
               className="md:hidden overflow-hidden"
             >
-              <div className="glass mt-2 flex flex-col gap-1 rounded-2xl p-3">
+              <div className="glass mt-2 flex flex-col rounded-2xl overflow-hidden border border-(--color-border)">
                 {links.map((l) => 
                   l.to === "/services" ? (
-                    <div key={l.to} className="flex flex-col">
+                    <div key={l.to} className="flex flex-col border-b border-(--color-border)/50 last:border-0">
                       <NavLink
                         to={path(l.to)}
                         onClick={() => setOpen(false)}
-                        className="rounded-lg px-3 py-2.5 text-sm text-(--color-ink) flex items-center justify-between"
+                        className={({ isActive }) =>
+                          `rounded-none px-5 py-3.5 text-base font-medium flex items-center justify-between ${
+                            isActive
+                              ? "text-(--color-cyan) bg-white/5"
+                              : "text-(--color-ink)"
+                          }`
+                        }
                       >
                         {l.label}
                       </NavLink>
-                      <div className="flex flex-col border-s border-(--color-border) ms-4 ps-4 my-1 gap-3">
+                      <div className="flex flex-col border-s border-(--color-border) ms-5 ps-4 pb-2 mt-1 gap-0">
                         {t.services.categories.map((cat) => (
                           <Link
                             key={cat.id}
                             to={path(`/services/${cat.id}`)}
                             onClick={() => setOpen(false)}
-                            className="text-xs text-(--color-muted) hover:text-(--color-ink) transition-colors"
+                            className="text-sm text-(--color-muted) hover:text-(--color-ink) transition-colors py-2"
                           >
                             {cat.title}
                           </Link>
@@ -180,13 +186,19 @@ export default function Navbar() {
                       to={path(l.to)}
                       end={l.to === "/"}
                       onClick={() => setOpen(false)}
-                      className="rounded-lg px-3 py-2.5 text-sm text-(--color-ink)"
+                      className={({ isActive }) =>
+                        `rounded-none px-5 py-3.5 text-base font-medium border-b border-(--color-border)/50 last:border-0 ${
+                          isActive
+                            ? "text-(--color-cyan) bg-white/5"
+                            : "text-(--color-ink)"
+                        }`
+                      }
                     >
                       {l.label}
                     </NavLink>
                   )
                 )}
-                <div className="mt-1 flex items-center justify-between px-3">
+                <div className="mt-2 border-t border-(--color-border)/50 flex items-center justify-between p-4">
                   <button
                     onClick={toggleLang}
                     className="flex items-center gap-1.5 py-2 text-sm text-(--color-muted)"

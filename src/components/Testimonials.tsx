@@ -97,18 +97,18 @@ export default function Testimonials() {
   const current = testimonialsData[currentIndex];
 
   return (
-    <section className="relative overflow-hidden py-24 sm:py-32">
+    <section className="relative overflow-hidden py-16 sm:py-32">
       {/* Background Ambient Glow */}
       <div
         aria-hidden
-        className="pointer-events-none absolute start-1/2 top-1/2 h-[500px] w-[500px] -translate-x-1/2 -translate-y-1/2 rounded-full opacity-15 blur-[120px]"
+        className="pointer-events-none absolute start-1/2 top-1/2 h-[350px] w-[350px] sm:h-[500px] sm:w-[500px] -translate-x-1/2 -translate-y-1/2 rounded-full opacity-15 blur-[120px]"
         style={{
           background: `radial-gradient(circle, ${current.accent} 0%, transparent 70%)`,
           transition: "background 0.5s ease",
         }}
       />
 
-      <div className="mx-auto max-w-7xl px-5">
+      <div className="mx-auto max-w-7xl px-4 sm:px-5">
         <SectionHeader
           eyebrow={isAr ? "شهادات العملاء وشركاء النجاح" : "Client Success Stories"}
           title={
@@ -124,9 +124,9 @@ export default function Testimonials() {
         />
 
         {/* Featured Testimonial Spotlight */}
-        <div className="mt-16 mx-auto max-w-4xl">
+        <div className="mt-10 sm:mt-16 mx-auto max-w-4xl">
           <Reveal>
-            <div className="relative overflow-hidden rounded-3xl border border-white/10 bg-[#0c0c16]/80 p-8 sm:p-12 backdrop-blur-2xl shadow-[0_20px_50px_rgba(0,0,0,0.6)]">
+            <div className="relative overflow-hidden rounded-3xl border border-white/10 bg-[#0c0c16]/80 p-5 sm:p-12 backdrop-blur-2xl shadow-[0_20px_50px_rgba(0,0,0,0.6)]">
               {/* Giant Watermark Quote */}
               <div
                 aria-hidden
@@ -166,24 +166,24 @@ export default function Testimonials() {
                   transition={{ duration: 0.3 }}
                   className="mt-8"
                 >
-                  <p className="text-lg leading-relaxed text-white/95 sm:text-xl sm:leading-relaxed font-normal">
+                  <p className="text-base leading-relaxed text-white/95 sm:text-xl sm:leading-relaxed font-normal">
                     “{current.quote[lang]}”
                   </p>
 
                   {/* Impact Metric Highlight */}
-                  <div className="mt-6 inline-flex items-center gap-2 rounded-xl border border-white/10 bg-white/[0.03] px-4 py-2">
-                    <Sparkles size={15} style={{ color: current.accent }} />
+                  <div className="mt-5 sm:mt-6 inline-flex items-center gap-2 rounded-xl border border-white/10 bg-white/[0.03] px-3.5 py-1.5 sm:px-4 sm:py-2">
+                    <Sparkles size={14} style={{ color: current.accent }} />
                     <span className="text-xs font-mono font-bold" style={{ color: current.accent }}>
                       {current.metric[lang]}
                     </span>
                   </div>
 
                   {/* Client Info & Avatar */}
-                  <div className="mt-8 flex flex-wrap items-center justify-between gap-4 border-t border-white/10 pt-6">
-                    <div className="flex items-center gap-4">
+                  <div className="mt-6 sm:mt-8 flex flex-wrap items-center justify-between gap-4 border-t border-white/10 pt-5 sm:pt-6">
+                    <div className="flex items-center gap-3 sm:gap-4">
                       {/* Initials Avatar */}
                       <div
-                        className="flex h-13 w-13 shrink-0 items-center justify-center rounded-2xl text-base font-bold shadow-lg"
+                        className="flex h-11 w-11 sm:h-13 sm:w-13 shrink-0 items-center justify-center rounded-xl sm:rounded-2xl text-sm sm:text-base font-bold shadow-lg"
                         style={{
                           background: `linear-gradient(135deg, ${current.accent}30, ${current.accent}10)`,
                           border: `1px solid ${current.accent}50`,
@@ -194,27 +194,27 @@ export default function Testimonials() {
                       </div>
 
                       <div>
-                        <h4 className="text-base font-bold text-white">
+                        <h4 className="text-sm sm:text-base font-bold text-white">
                           {current.name[lang]}
                         </h4>
-                        <p className="text-xs text-(--color-muted)">
+                        <p className="text-[11px] sm:text-xs text-(--color-muted)">
                           {current.role[lang]} •{" "}
                           <span className="text-white/80 font-medium">
                             {current.company[lang]}
                           </span>
                         </p>
-                        <p className="mt-0.5 text-[11px] font-mono text-white/40">
+                        <p className="mt-0.5 text-[10px] sm:text-[11px] font-mono text-white/40">
                           {current.project[lang]}
                         </p>
                       </div>
                     </div>
 
                     {/* Navigation Controls */}
-                    <div className="flex items-center gap-2">
+                    <div className="flex items-center gap-2 ms-auto sm:ms-0">
                       <button
                         onClick={prevTestimonial}
                         aria-label="Previous testimonial"
-                        className="flex h-10 w-10 items-center justify-center rounded-xl border border-white/10 bg-white/5 text-white/70 transition-colors hover:border-white/30 hover:bg-white/10 hover:text-white"
+                        className="flex h-9 w-9 sm:h-10 sm:w-10 items-center justify-center rounded-xl border border-white/10 bg-white/5 text-white/70 transition-colors hover:border-white/30 hover:bg-white/10 hover:text-white"
                       >
                         <ChevronLeft
                           size={18}
@@ -222,14 +222,14 @@ export default function Testimonials() {
                         />
                       </button>
 
-                      <span className="px-2 font-mono text-xs text-white/50">
+                      <span className="px-1.5 sm:px-2 font-mono text-xs text-white/50">
                         0{currentIndex + 1} / 0{testimonialsData.length}
                       </span>
 
                       <button
                         onClick={nextTestimonial}
                         aria-label="Next testimonial"
-                        className="flex h-10 w-10 items-center justify-center rounded-xl border border-white/10 bg-white/5 text-white/70 transition-colors hover:border-white/30 hover:bg-white/10 hover:text-white"
+                        className="flex h-9 w-9 sm:h-10 sm:w-10 items-center justify-center rounded-xl border border-white/10 bg-white/5 text-white/70 transition-colors hover:border-white/30 hover:bg-white/10 hover:text-white"
                       >
                         <ChevronRight
                           size={18}
@@ -245,19 +245,19 @@ export default function Testimonials() {
         </div>
 
         {/* Small thumbnail cards for all clients */}
-        <div className="mt-8 grid grid-cols-2 gap-3 sm:grid-cols-4 max-w-4xl mx-auto">
+        <div className="mt-6 sm:mt-8 grid grid-cols-2 gap-2 sm:gap-3 sm:grid-cols-4 max-w-4xl mx-auto">
           {testimonialsData.map((item, idx) => (
             <button
               key={item.id}
               onClick={() => setCurrentIndex(idx)}
-              className={`flex items-center gap-3 rounded-xl border p-3 text-start transition-all ${
+              className={`flex items-center gap-2.5 sm:gap-3 rounded-xl border p-2.5 sm:p-3 text-start transition-all ${
                 idx === currentIndex
                   ? "border-white/30 bg-white/10 shadow-md"
                   : "border-white/5 bg-white/[0.02] hover:border-white/15 hover:bg-white/[0.05]"
               }`}
             >
               <div
-                className="flex h-8 w-8 shrink-0 items-center justify-center rounded-lg text-xs font-bold"
+                className="flex h-7 w-7 sm:h-8 sm:w-8 shrink-0 items-center justify-center rounded-lg text-xs font-bold"
                 style={{
                   background: `${item.accent}20`,
                   color: item.accent,
@@ -266,10 +266,10 @@ export default function Testimonials() {
                 {item.initials}
               </div>
               <div className="min-w-0 flex-1">
-                <p className="truncate text-xs font-bold text-white">
+                <p className="truncate text-[11px] sm:text-xs font-bold text-white">
                   {item.name[lang]}
                 </p>
-                <p className="truncate text-[10px] text-(--color-muted)">
+                <p className="truncate text-[9px] sm:text-[10px] text-(--color-muted)">
                   {item.company[lang]}
                 </p>
               </div>

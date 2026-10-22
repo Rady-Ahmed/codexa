@@ -163,13 +163,13 @@ function HeroSection({ lang }: { lang: string }) {
         <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.015)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.015)_1px,transparent_1px)] bg-[size:60px_60px]" />
       </motion.div>
 
-      <motion.div style={{ opacity }} className="relative z-10 mx-auto max-w-5xl px-5 text-center pt-24">
+      <motion.div style={{ opacity }} className="relative z-10 mx-auto max-w-5xl px-4 sm:px-5 text-center pt-20 sm:pt-24">
         {/* Badge */}
         <motion.div
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
-          className="inline-flex items-center gap-2 rounded-full border border-(--color-cyan)/30 bg-(--color-cyan)/10 px-5 py-2 text-sm font-bold text-(--color-cyan) mb-10"
+          className="inline-flex items-center gap-2 rounded-full border border-(--color-cyan)/30 bg-(--color-cyan)/10 px-3.5 py-1.5 sm:px-5 sm:py-2 text-xs sm:text-sm font-bold text-(--color-cyan) mb-6 sm:mb-10"
         >
           <span className="relative flex h-2 w-2">
             <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-(--color-cyan) opacity-75" />
@@ -183,7 +183,7 @@ function HeroSection({ lang }: { lang: string }) {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, delay: 0.1 }}
-          className="text-5xl sm:text-6xl md:text-8xl font-black text-white tracking-tight leading-[1.05] mb-8"
+          className="text-3xl sm:text-6xl md:text-8xl font-black text-white tracking-tight leading-[1.1] mb-6 sm:mb-8"
         >
           {isAr ? (
             <>
@@ -209,7 +209,7 @@ function HeroSection({ lang }: { lang: string }) {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, delay: 0.2 }}
-          className="text-lg sm:text-xl text-(--color-muted) max-w-3xl mx-auto leading-relaxed mb-12"
+          className="text-sm sm:text-xl text-(--color-muted) max-w-3xl mx-auto leading-relaxed mb-8 sm:mb-12"
         >
           {isAr
             ? "Codexa ليست مجرد شركة برمجة. نحن استوديو هندسي متخصص في تحويل الأفكار إلى منتجات رقمية عالمية المستوى — من التصميم إلى الإطلاق وما بعده."
@@ -221,16 +221,16 @@ function HeroSection({ lang }: { lang: string }) {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.3 }}
-          className="flex flex-wrap items-center justify-center gap-4"
+          className="flex flex-col sm:flex-row items-stretch sm:items-center justify-center gap-3 sm:gap-4 max-w-sm sm:max-w-none mx-auto"
         >
           <a href="/contact"
-             className="inline-flex items-center gap-2 rounded-xl px-7 py-3.5 text-sm font-bold text-white shadow-[0_0_24px_rgba(108,76,241,0.3)] hover:shadow-[0_0_40px_rgba(108,76,241,0.5)] transition-all hover:scale-105"
+             className="inline-flex items-center justify-center gap-2 rounded-xl px-7 py-3.5 text-sm font-bold text-white shadow-[0_0_24px_rgba(108,76,241,0.3)] hover:shadow-[0_0_40px_rgba(108,76,241,0.5)] transition-all hover:scale-105"
              style={{ background: "linear-gradient(135deg, #6C4CF1, #22D3EE)" }}>
             {isAr ? "ابدأ مشروعك" : "Start your project"}
             <ArrowUpRight size={16} />
           </a>
           <a href="/portfolio"
-             className="inline-flex items-center gap-2 rounded-xl border border-white/10 bg-white/5 px-7 py-3.5 text-sm font-bold text-white hover:bg-white/10 transition-all">
+             className="inline-flex items-center justify-center gap-2 rounded-xl border border-white/10 bg-white/5 px-7 py-3.5 text-sm font-bold text-white hover:bg-white/10 transition-all">
             {isAr ? "شاهد أعمالنا" : "View our work"}
           </a>
         </motion.div>
@@ -240,7 +240,7 @@ function HeroSection({ lang }: { lang: string }) {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 1 }}
-          className="mt-20 flex flex-col items-center gap-2 text-xs text-(--color-muted)"
+          className="mt-12 sm:mt-20 flex flex-col items-center gap-2 text-xs text-(--color-muted)"
         >
           <motion.div
             animate={{ y: [0, 8, 0] }}
@@ -263,9 +263,9 @@ function StatsSection({ lang }: { lang: string }) {
   const inView = useInView(ref, { once: true, margin: "-60px" });
 
   return (
-    <section ref={ref} className="relative py-20 bg-[#09090b] border-y border-white/[0.05]">
-      <div className="mx-auto max-w-6xl px-5">
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-5">
+    <section ref={ref} className="relative py-12 sm:py-20 bg-[#09090b] border-y border-white/[0.05]">
+      <div className="mx-auto max-w-6xl px-4 sm:px-5">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-3 sm:gap-5">
           {stats.map((s, i) => {
             const Icon = s.icon;
             return (
@@ -274,19 +274,19 @@ function StatsSection({ lang }: { lang: string }) {
                 initial={{ opacity: 0, y: 24 }}
                 animate={inView ? { opacity: 1, y: 0 } : {}}
                 transition={{ delay: i * 0.1, duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
-                className="group rounded-2xl border border-white/[0.06] bg-[#0f0f18]/80 p-6 text-center backdrop-blur-xl hover:border-white/10 transition-colors"
+                className="group rounded-2xl border border-white/[0.06] bg-[#0f0f18]/80 p-4 sm:p-6 text-center backdrop-blur-xl hover:border-white/10 transition-colors"
               >
-                <div className="mb-4 flex justify-center">
-                  <div className="flex h-10 w-10 items-center justify-center rounded-xl"
+                <div className="mb-3 sm:mb-4 flex justify-center">
+                  <div className="flex h-9 w-9 sm:h-10 sm:w-10 items-center justify-center rounded-xl"
                        style={{ background: `${s.color}18`, color: s.color, border: `1px solid ${s.color}30` }}>
-                    <Icon size={20} />
+                    <Icon size={18} />
                   </div>
                 </div>
-                <div className="text-3xl sm:text-4xl font-black mb-1.5"
+                <div className="text-2xl sm:text-4xl font-black mb-1 sm:mb-1.5"
                      style={{ color: s.color }}>
                   <SmartCountUp value={s.value} />
                 </div>
-                <div className="text-sm text-(--color-muted)">{s.label}</div>
+                <div className="text-xs sm:text-sm text-(--color-muted)">{s.label}</div>
               </motion.div>
             );
           })}
@@ -299,22 +299,22 @@ function StatsSection({ lang }: { lang: string }) {
 function MissionSection({ lang }: { lang: string }) {
   const isAr = lang === "ar";
   return (
-    <section className="py-24 sm:py-32 bg-[#09090b]">
-      <div className="mx-auto max-w-6xl px-5">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+    <section className="py-16 sm:py-32 bg-[#09090b]">
+      <div className="mx-auto max-w-6xl px-4 sm:px-5">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-16 items-center">
           {/* Left */}
           <Reveal>
-            <span className="inline-flex items-center gap-2 rounded-full border border-(--color-indigo)/30 bg-(--color-indigo)/10 px-4 py-1.5 text-sm font-bold text-(--color-indigo) mb-6">
+            <span className="inline-flex items-center gap-2 rounded-full border border-(--color-indigo)/30 bg-(--color-indigo)/10 px-3.5 py-1.5 text-xs sm:text-sm font-bold text-(--color-indigo) mb-4 sm:mb-6">
               {isAr ? "رسالتنا" : "Our Mission"}
             </span>
-            <h2 className="text-3xl sm:text-4xl md:text-5xl font-black text-white leading-[1.15] mb-6">
+            <h2 className="text-2xl sm:text-4xl md:text-5xl font-black text-white leading-[1.15] mb-4 sm:mb-6">
               {isAr ? (
                 <>أن نكون الشريك التقني<br /><span className="gradient-text">الذي كنت تبحث عنه</span></>
               ) : (
                 <>To be the technical partner<br /><span className="gradient-text">you've been looking for</span></>
               )}
             </h2>
-            <p className="text-(--color-muted) text-lg leading-relaxed mb-8">
+            <p className="text-(--color-muted) text-sm sm:text-lg leading-relaxed mb-6 sm:mb-8">
               {isAr
                 ? "نؤمن بأن كل شركة ناشئة أو مؤسسة تستحق منتجاً رقمياً يعكس قيمتها الحقيقية. مهمتنا هي تحويل هذا الإيمان إلى واقع ملموس — بكود نظيف، تصميم لافت، وبنية تحتية تصمد أمام النمو."
                 : "We believe every startup or enterprise deserves a digital product that reflects its true value. Our mission is to turn that belief into tangible reality — with clean code, striking design, and infrastructure that withstands growth."}
@@ -324,7 +324,7 @@ function MissionSection({ lang }: { lang: string }) {
                 ? ["كود مملوك بالكامل بعد التسليم", "تواصل مباشر مع فريق التطوير", "دعم فني مستمر بعد الإطلاق"]
                 : ["Full code ownership after delivery", "Direct communication with dev team", "Continuous technical support after launch"]
               ).map((item) => (
-                <div key={item} className="flex items-center gap-3 text-sm text-white">
+                <div key={item} className="flex items-center gap-3 text-xs sm:text-sm text-white">
                   <CheckCircle2 size={16} className="text-[#34D399] shrink-0" />
                   {item}
                 </div>
@@ -336,14 +336,14 @@ function MissionSection({ lang }: { lang: string }) {
           <Reveal delay={0.2}>
             <div className="relative rounded-2xl border border-white/[0.07] bg-[#0f0f18] overflow-hidden shadow-2xl">
               {/* Terminal bar */}
-              <div className="flex items-center gap-2 px-5 py-3.5 border-b border-white/[0.06] bg-[#13131c]">
-                <div className="h-3 w-3 rounded-full bg-[#FF5F57]" />
-                <div className="h-3 w-3 rounded-full bg-[#FEBC2E]" />
-                <div className="h-3 w-3 rounded-full bg-[#28C840]" />
-                <span className="ml-3 text-xs text-(--color-muted) font-mono">codexa.sh — {isAr ? "مشروعك التالي" : "your-next-project"}</span>
+              <div className="flex items-center gap-2 px-4 sm:px-5 py-3 sm:py-3.5 border-b border-white/[0.06] bg-[#13131c]">
+                <div className="h-2.5 w-2.5 sm:h-3 sm:w-3 rounded-full bg-[#FF5F57]" />
+                <div className="h-2.5 w-2.5 sm:h-3 sm:w-3 rounded-full bg-[#FEBC2E]" />
+                <div className="h-2.5 w-2.5 sm:h-3 sm:w-3 rounded-full bg-[#28C840]" />
+                <span className="ml-2 sm:ml-3 text-[11px] sm:text-xs text-(--color-muted) font-mono truncate">codexa.sh — {isAr ? "مشروعك التالي" : "your-next-project"}</span>
               </div>
               {/* Terminal content */}
-              <div className="p-6 font-mono text-sm space-y-3">
+              <div className="p-4 sm:p-6 font-mono text-xs sm:text-sm space-y-2.5 sm:space-y-3">
                 {[
                   { prompt: "$", cmd: "codexa init", color: "#22D3EE" },
                   { prompt: "✓", cmd: isAr ? "تحليل المتطلبات..." : "Analyzing requirements...", color: "#34D399" },
@@ -358,7 +358,7 @@ function MissionSection({ lang }: { lang: string }) {
                     whileInView={{ opacity: 1, x: 0 }}
                     viewport={{ once: true }}
                     transition={{ delay: i * 0.2, duration: 0.4 }}
-                    className="flex items-center gap-3"
+                    className="flex items-center gap-2.5 sm:gap-3"
                   >
                     <span style={{ color: line.color }}>{line.prompt}</span>
                     <span className="text-white/80">{line.cmd}</span>
@@ -383,15 +383,15 @@ function TimelineSection({ lang }: { lang: string }) {
   const timeline = isAr ? TIMELINE_AR : TIMELINE_EN;
 
   return (
-    <section className="py-24 sm:py-32 relative bg-[#09090b]">
+    <section className="py-16 sm:py-32 relative bg-[#09090b]">
       <div className="absolute inset-0 -z-10 bg-[linear-gradient(rgba(255,255,255,0.012)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.012)_1px,transparent_1px)] bg-[size:80px_80px]" />
-      <div className="mx-auto max-w-5xl px-5">
+      <div className="mx-auto max-w-5xl px-4 sm:px-5">
         <Reveal>
-          <div className="text-center mb-20">
-            <span className="inline-flex items-center gap-2 rounded-full border border-(--color-cyan)/30 bg-(--color-cyan)/10 px-4 py-1.5 text-sm font-bold text-(--color-cyan) mb-5">
+          <div className="text-center mb-12 sm:mb-20">
+            <span className="inline-flex items-center gap-2 rounded-full border border-(--color-cyan)/30 bg-(--color-cyan)/10 px-3.5 py-1.5 text-xs sm:text-sm font-bold text-(--color-cyan) mb-4 sm:mb-5">
               {isAr ? "رحلة النمو" : "Our Growth Journey"}
             </span>
-            <h2 className="text-3xl sm:text-4xl md:text-5xl font-black text-white leading-tight">
+            <h2 className="text-2xl sm:text-4xl md:text-5xl font-black text-white leading-tight">
               {isAr ? "من فكرة إلى شركة عالمية" : "From idea to a global company"}
             </h2>
           </div>
@@ -405,7 +405,7 @@ function TimelineSection({ lang }: { lang: string }) {
           {timeline.map((item, i) => {
             const isLeft = i % 2 === 0;
             return (
-              <div key={item.year} className={`relative flex ${isLeft ? "md:flex-row-reverse" : "md:flex-row"} items-start md:items-center mb-16`}>
+              <div key={item.year} className={`relative flex ${isLeft ? "md:flex-row-reverse" : "md:flex-row"} items-start md:items-center mb-10 sm:mb-16`}>
                 {/* Dot */}
                 <div className="absolute left-[18px] md:left-1/2 md:-translate-x-1/2 z-10">
                   <motion.div
@@ -413,32 +413,32 @@ function TimelineSection({ lang }: { lang: string }) {
                     whileInView={{ scale: 1 }}
                     viewport={{ once: true }}
                     transition={{ type: "spring", stiffness: 400, damping: 20, delay: 0.1 }}
-                    className="h-9 w-9 rounded-full border-2 border-(--color-indigo) bg-[#09090b] flex items-center justify-center shadow-[0_0_20px_rgba(108,76,241,0.4)]"
+                    className="h-8 w-8 sm:h-9 sm:w-9 rounded-full border-2 border-(--color-indigo) bg-[#09090b] flex items-center justify-center shadow-[0_0_20px_rgba(108,76,241,0.4)]"
                   >
-                    <span className="text-xs font-black text-(--color-cyan)">{i + 1}</span>
+                    <span className="text-[11px] sm:text-xs font-black text-(--color-cyan)">{i + 1}</span>
                   </motion.div>
                 </div>
 
                 {/* Content card */}
-                <div className={`pl-14 md:pl-0 ${isLeft ? "md:pr-16 md:w-[calc(50%-20px)]" : "md:pl-16 md:w-[calc(50%-20px)] md:ml-auto"}`}>
+                <div className={`pl-12 sm:pl-14 md:pl-0 ${isLeft ? "md:pr-16 md:w-[calc(50%-20px)]" : "md:pl-16 md:w-[calc(50%-20px)] md:ml-auto"}`}>
                   <motion.div
                     initial={{ opacity: 0, x: isLeft ? 40 : -40 }}
                     whileInView={{ opacity: 1, x: 0 }}
                     viewport={{ once: true, margin: "-80px" }}
                     transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
-                    className="group rounded-2xl border border-white/[0.06] bg-[#0f0f18]/70 p-7 backdrop-blur-xl hover:border-(--color-indigo)/30 transition-colors"
+                    className="group rounded-2xl border border-white/[0.06] bg-[#0f0f18]/70 p-5 sm:p-7 backdrop-blur-xl hover:border-(--color-indigo)/30 transition-colors"
                   >
-                    <div className="flex items-center gap-3 mb-4">
-                      <span className="rounded-lg bg-(--color-indigo)/20 px-3 py-1 text-xs font-bold text-(--color-indigo)">
+                    <div className="flex items-center gap-2.5 sm:gap-3 mb-3 sm:mb-4">
+                      <span className="rounded-lg bg-(--color-indigo)/20 px-2.5 sm:px-3 py-1 text-xs font-bold text-(--color-indigo)">
                         {item.year}
                       </span>
                       <span className="text-xs text-(--color-muted)">{item.phase}</span>
                     </div>
-                    <h3 className="text-xl font-bold text-white mb-3 group-hover:text-(--color-cyan) transition-colors">
+                    <h3 className="text-lg sm:text-xl font-bold text-white mb-2 sm:mb-3 group-hover:text-(--color-cyan) transition-colors">
                       {item.title}
                     </h3>
-                    <p className="text-(--color-muted) text-sm leading-relaxed mb-4">{item.desc}</p>
-                    <div className="inline-flex items-center gap-2 rounded-full bg-[#34D399]/10 border border-[#34D399]/20 px-3 py-1 text-xs font-semibold text-[#34D399]">
+                    <p className="text-(--color-muted) text-xs sm:text-sm leading-relaxed mb-3 sm:mb-4">{item.desc}</p>
+                    <div className="inline-flex items-center gap-1.5 sm:gap-2 rounded-full bg-[#34D399]/10 border border-[#34D399]/20 px-2.5 sm:px-3 py-1 text-[11px] sm:text-xs font-semibold text-[#34D399]">
                       <Star size={11} />
                       {item.milestone}
                     </div>
@@ -456,28 +456,28 @@ function TimelineSection({ lang }: { lang: string }) {
 function TechStackSection({ lang }: { lang: string }) {
   const isAr = lang === "ar";
   return (
-    <section className="py-20 border-y border-white/[0.05] bg-[#09090b] overflow-hidden">
-      <div className="mx-auto max-w-6xl px-5">
+    <section className="py-14 sm:py-20 border-y border-white/[0.05] bg-[#09090b] overflow-hidden">
+      <div className="mx-auto max-w-6xl px-4 sm:px-5">
         <Reveal>
-          <div className="text-center mb-12">
-            <span className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 py-1.5 text-sm font-bold text-white/70 mb-4">
+          <div className="text-center mb-8 sm:mb-12">
+            <span className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-3.5 py-1.5 text-xs sm:text-sm font-bold text-white/70 mb-3 sm:mb-4">
               <Cpu size={14} />
               {isAr ? "التقنيات التي نتقنها" : "Technologies we master"}
             </span>
-            <h2 className="text-2xl sm:text-3xl font-black text-white">
+            <h2 className="text-xl sm:text-3xl font-black text-white">
               {isAr ? "بُنيت بأفضل التقنيات في العالم" : "Built with world's best technologies"}
             </h2>
           </div>
         </Reveal>
-        <div className="flex flex-wrap justify-center gap-3">
+        <div className="flex flex-wrap justify-center gap-2 sm:gap-3">
           {TECH_STACK.map((tech, i) => (
             <Reveal key={tech.name} delay={i * 0.05}>
               <motion.div
                 whileHover={{ scale: 1.08, y: -2 }}
-                className="flex items-center gap-2.5 rounded-xl border border-white/[0.06] bg-[#0f0f18]/80 px-5 py-3 backdrop-blur-sm cursor-default"
+                className="flex items-center gap-2 sm:gap-2.5 rounded-xl border border-white/[0.06] bg-[#0f0f18]/80 px-3.5 py-2 sm:px-5 sm:py-3 backdrop-blur-sm cursor-default"
               >
                 <div className="h-2 w-2 rounded-full" style={{ background: tech.color }} />
-                <span className="text-sm font-semibold text-white/80">{tech.name}</span>
+                <span className="text-xs sm:text-sm font-semibold text-white/80">{tech.name}</span>
               </motion.div>
             </Reveal>
           ))}
@@ -492,26 +492,26 @@ function ValuesSection({ lang }: { lang: string }) {
   const values = isAr ? VALUES_AR : VALUES_EN;
 
   return (
-    <section className="py-24 sm:py-32 bg-[#09090b]">
-      <div className="mx-auto max-w-6xl px-5">
+    <section className="py-16 sm:py-32 bg-[#09090b]">
+      <div className="mx-auto max-w-6xl px-4 sm:px-5">
         <Reveal>
-          <div className="text-center mb-16">
-            <span className="inline-flex items-center gap-2 rounded-full border border-(--color-cyan)/30 bg-(--color-cyan)/10 px-4 py-1.5 text-sm font-bold text-(--color-cyan) mb-5">
+          <div className="text-center mb-10 sm:mb-16">
+            <span className="inline-flex items-center gap-2 rounded-full border border-(--color-cyan)/30 bg-(--color-cyan)/10 px-3.5 py-1.5 text-xs sm:text-sm font-bold text-(--color-cyan) mb-4 sm:mb-5">
               {isAr ? "ما يميزنا" : "What defines us"}
             </span>
-            <h2 className="text-3xl sm:text-4xl md:text-5xl font-black text-white">
+            <h2 className="text-2xl sm:text-4xl md:text-5xl font-black text-white">
               {isAr ? "قيم لا نتنازل عنها" : "Values we never compromise"}
             </h2>
           </div>
         </Reveal>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-5">
           {values.map((v, i) => {
             const Icon = v.icon;
             return (
               <Reveal key={v.title} delay={i * 0.1}>
                 <motion.div
                   whileHover={{ y: -6 }}
-                  className={`group relative overflow-hidden rounded-2xl border border-white/[0.06] bg-[#0f0f18]/60 p-8 backdrop-blur-xl ${v.span}`}
+                  className={`group relative overflow-hidden rounded-2xl border border-white/[0.06] bg-[#0f0f18]/60 p-5 sm:p-8 backdrop-blur-xl ${v.span}`}
                 >
                   {/* Hover glow */}
                   <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-2xl"
@@ -520,21 +520,21 @@ function ValuesSection({ lang }: { lang: string }) {
                   <div className="absolute top-0 left-0 right-0 h-[1px] opacity-0 group-hover:opacity-100 transition-opacity duration-500"
                        style={{ background: `linear-gradient(90deg, transparent, ${v.color}, transparent)` }} />
 
-                  <div className="mb-5 flex items-center gap-3">
-                    <div className="flex h-12 w-12 items-center justify-center rounded-xl"
+                  <div className="mb-4 sm:mb-5 flex items-center gap-3">
+                    <div className="flex h-10 w-10 sm:h-12 sm:w-12 items-center justify-center rounded-xl"
                          style={{ background: `${v.color}18`, border: `1px solid ${v.color}30`, color: v.color }}>
-                      <Icon size={22} />
+                      <Icon size={20} />
                     </div>
-                    <span className="rounded-full px-3 py-1 text-xs font-bold"
+                    <span className="rounded-full px-2.5 sm:px-3 py-1 text-[11px] sm:text-xs font-bold"
                           style={{ background: `${v.color}15`, color: v.color, border: `1px solid ${v.color}25` }}>
                       {v.badge}
                     </span>
                   </div>
-                  <h3 className="text-xl font-bold text-white mb-3 group-hover:text-[var(--vc)] transition-colors"
+                  <h3 className="text-lg sm:text-xl font-bold text-white mb-2 sm:mb-3 group-hover:text-[var(--vc)] transition-colors"
                       style={{ "--vc": v.color } as React.CSSProperties}>
                     {v.title}
                   </h3>
-                  <p className="text-(--color-muted) text-sm leading-relaxed">{v.desc}</p>
+                  <p className="text-(--color-muted) text-xs sm:text-sm leading-relaxed">{v.desc}</p>
                 </motion.div>
               </Reveal>
             );

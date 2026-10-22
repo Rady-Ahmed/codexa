@@ -10,7 +10,7 @@ export default function FAQ() {
   const [openIndex, setOpenIndex] = useState<number | null>(0);
 
   return (
-    <section className="mx-auto max-w-3xl px-5 py-24">
+    <section className="mx-auto max-w-3xl px-4 sm:px-5 py-16 sm:py-24">
       <SectionHeader eyebrow={t.faq.eyebrow} title={t.faq.title} />
 
       <div className="mt-12 space-y-3">
@@ -21,16 +21,16 @@ export default function FAQ() {
               <div className="overflow-hidden rounded-xl border border-(--color-border) bg-white/[0.015]">
                 <button
                   onClick={() => setOpenIndex(isOpen ? null : i)}
-                  className="flex w-full items-center justify-between gap-4 px-5 py-4 text-start"
+                  className="flex w-full items-center justify-between gap-4 px-5 py-5 text-start"
                   aria-expanded={isOpen}
                 >
-                  <span className="text-sm font-medium text-(--color-ink)">{item.q}</span>
+                  <span className="text-sm sm:text-base font-medium text-(--color-ink) leading-snug">{item.q}</span>
                   <motion.span
                     animate={{ rotate: isOpen ? 45 : 0 }}
                     transition={{ duration: 0.2 }}
                     className="shrink-0 text-(--color-cyan)"
                   >
-                    <Plus size={16} />
+                    <Plus size={18} />
                   </motion.span>
                 </button>
                 <AnimatePresence initial={false}>

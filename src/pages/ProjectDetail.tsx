@@ -64,14 +64,14 @@ export default function ProjectDetail() {
       <Seo title={`${project.name} — Codexa`} description={project.summary[lang]} />
 
       {/* Hero Section */}
-      <section className="relative overflow-hidden pt-36 pb-12 sm:pt-44 sm:pb-16">
+      <section className="relative overflow-hidden pt-28 pb-10 sm:pt-44 sm:pb-16">
         <div
           aria-hidden
           className="pointer-events-none absolute start-1/2 top-[-10%] h-[500px] w-[500px] -translate-x-1/2 rounded-full opacity-20 blur-[130px]"
           style={{ background: `radial-gradient(circle, ${project.color} 0%, transparent 70%)` }}
         />
 
-        <div className="relative mx-auto max-w-5xl px-5">
+        <div className="relative mx-auto max-w-5xl px-4 sm:px-5">
           <Reveal>
             <Link
               to={path("/portfolio")}
@@ -81,7 +81,7 @@ export default function ProjectDetail() {
               {t.portfolio.viewAll}
             </Link>
 
-            <div className="mt-6 flex flex-wrap items-center gap-3">
+            <div className="mt-5 sm:mt-6 flex flex-wrap items-center gap-2.5 sm:gap-3">
               <span
                 className="mono-badge inline-flex items-center gap-1.5 rounded-full border px-3 py-1 text-xs font-semibold"
                 style={{
@@ -98,21 +98,21 @@ export default function ProjectDetail() {
               </span>
             </div>
 
-            <h1 className="mt-4 text-4xl font-bold tracking-tight text-white sm:text-6xl">
+            <h1 className="mt-4 text-3xl font-bold tracking-tight text-white sm:text-5xl lg:text-6xl">
               {project.name}
             </h1>
 
-            <p className="mt-5 max-w-2xl text-lg leading-relaxed text-(--color-muted)">
+            <p className="mt-4 sm:mt-5 max-w-2xl text-base sm:text-lg leading-relaxed text-(--color-muted)">
               {project.description[lang]}
             </p>
 
             {/* Action Buttons */}
-            <div className="mt-8 flex flex-wrap items-center gap-4">
+            <div className="mt-6 sm:mt-8 flex flex-col sm:flex-row items-stretch sm:items-center gap-3 sm:gap-4">
               <a
                 href={`https://wa.me/201101970882?text=${whatsappMessage}`}
                 target="_blank"
                 rel="noreferrer"
-                className="group inline-flex items-center gap-2.5 rounded-xl bg-gradient-to-r from-(--color-indigo) to-(--color-cyan) px-6 py-3.5 text-sm font-semibold text-white shadow-lg transition-transform hover:scale-[1.02] active:scale-[0.98]"
+                className="group inline-flex items-center justify-center gap-2.5 rounded-xl bg-gradient-to-r from-(--color-indigo) to-(--color-cyan) px-6 py-3.5 text-sm font-semibold text-white shadow-lg transition-transform hover:scale-[1.02] active:scale-[0.98]"
               >
                 <MessageCircle size={18} />
                 {isAr ? "طلب حل مشابه لهذا المشروع" : "Request a Similar Solution"}
@@ -122,7 +122,7 @@ export default function ProjectDetail() {
                 href="https://wa.me/201101970882"
                 target="_blank"
                 rel="noreferrer"
-                className="inline-flex items-center gap-2 rounded-xl border border-white/10 bg-white/5 px-5 py-3.5 text-sm font-medium text-white transition-colors hover:border-white/20 hover:bg-white/10"
+                className="inline-flex items-center justify-center gap-2 rounded-xl border border-white/10 bg-white/5 px-5 py-3.5 text-sm font-medium text-white transition-colors hover:border-white/20 hover:bg-white/10"
               >
                 <ExternalLink size={16} className="text-(--color-cyan)" />
                 {isAr ? "استشارة معمارية مجانية" : "Free Tech Consultation"}
@@ -130,11 +130,11 @@ export default function ProjectDetail() {
             </div>
 
             {/* Tech Stack Pills */}
-            <div className="mt-8 flex flex-wrap gap-2">
+            <div className="mt-6 sm:mt-8 flex flex-wrap gap-1.5 sm:gap-2">
               {project.stack.map((s) => (
                 <span
                   key={s}
-                  className="mono-badge rounded-lg border border-white/10 bg-white/[0.03] px-3 py-1.5 text-xs text-white/80"
+                  className="mono-badge rounded-lg border border-white/10 bg-white/[0.03] px-2.5 py-1 text-xs text-white/80"
                 >
                   {s}
                 </span>
@@ -142,24 +142,24 @@ export default function ProjectDetail() {
             </div>
 
             {/* Impact Metrics Banner */}
-            <div className="mt-10 grid grid-cols-2 gap-4 rounded-2xl border border-white/10 bg-[#0c0c16]/80 p-6 sm:grid-cols-4 sm:p-7 backdrop-blur-xl">
+            <div className="mt-8 sm:mt-10 grid grid-cols-2 gap-3 sm:gap-4 rounded-2xl border border-white/10 bg-[#0c0c16]/80 p-4 sm:p-7 sm:grid-cols-4 backdrop-blur-xl">
               {project.metrics.map((m) => (
                 <div key={m.label[lang]}>
-                  <div className="mono-badge text-2xl font-bold sm:text-3xl" style={{ color: project.color }}>
+                  <div className="mono-badge text-xl font-bold sm:text-3xl" style={{ color: project.color }}>
                     {m.value}
                   </div>
-                  <div className="mt-1 text-xs text-(--color-muted)">{m.label[lang]}</div>
+                  <div className="mt-1 text-[11px] sm:text-xs text-(--color-muted)">{m.label[lang]}</div>
                 </div>
               ))}
               <div>
-                <div className="mono-badge text-2xl font-bold sm:text-3xl text-emerald-400">99.98%</div>
-                <div className="mt-1 text-xs text-(--color-muted)">
+                <div className="mono-badge text-xl font-bold sm:text-3xl text-emerald-400">99.98%</div>
+                <div className="mt-1 text-[11px] sm:text-xs text-(--color-muted)">
                   {isAr ? "جاهزية واستقرار الخوادم" : "Platform Uptime SLA"}
                 </div>
               </div>
               <div>
-                <div className="mono-badge text-2xl font-bold sm:text-3xl text-cyan-400">SOC-2</div>
-                <div className="mt-1 text-xs text-(--color-muted)">
+                <div className="mono-badge text-xl font-bold sm:text-3xl text-cyan-400">SOC-2</div>
+                <div className="mt-1 text-[11px] sm:text-xs text-(--color-muted)">
                   {isAr ? "معايير الأمان والتشفير" : "Security Architecture"}
                 </div>
               </div>
@@ -169,7 +169,7 @@ export default function ProjectDetail() {
       </section>
 
       {/* Visual Showcase: Toggle Tabs (Live Preview vs System Architecture) */}
-      <section className="mx-auto max-w-5xl px-5 pb-16">
+      <section className="mx-auto max-w-5xl px-4 sm:px-5 pb-12 sm:pb-16">
         <Reveal delay={0.1}>
           {/* Tabs Header */}
           <div className="mb-4 flex items-center justify-between">
@@ -243,26 +243,26 @@ export default function ProjectDetail() {
       </section>
 
       {/* Case Study Details: Challenge, Approach, Result */}
-      <section className="mx-auto max-w-5xl px-5 pb-20">
-        <h2 className="mb-6 text-2xl font-bold text-white">
+      <section className="mx-auto max-w-5xl px-4 sm:px-5 pb-16 sm:pb-20">
+        <h2 className="mb-5 sm:mb-6 text-xl sm:text-2xl font-bold text-white">
           {isAr ? "كواليس التنفيذ وهندسة الحل" : "Engineering Journey & Execution"}
         </h2>
-        <div className="grid grid-cols-1 gap-6 md:grid-cols-3">
+        <div className="grid grid-cols-1 gap-4 sm:gap-6 md:grid-cols-3">
           {storyBlocks.map((block, i) => {
             const Icon = block.icon;
             return (
               <Reveal key={block.label} delay={i * 0.1}>
-                <div className="relative flex h-full flex-col rounded-2xl border border-white/10 bg-[#0c0c16]/70 p-6 backdrop-blur-xl transition-all hover:border-white/20">
+                <div className="relative flex h-full flex-col rounded-2xl border border-white/10 bg-[#0c0c16]/70 p-5 sm:p-6 backdrop-blur-xl transition-all hover:border-white/20">
                   <div className="flex items-center gap-3">
                     <span
-                      className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl"
+                      className="flex h-9 w-9 sm:h-10 sm:w-10 shrink-0 items-center justify-center rounded-xl"
                       style={{ backgroundColor: `${project.color}1A`, color: project.color }}
                     >
-                      <Icon size={20} />
+                      <Icon size={18} />
                     </span>
-                    <h3 className="mono-badge text-base font-bold text-white">{block.label}</h3>
+                    <h3 className="mono-badge text-sm sm:text-base font-bold text-white">{block.label}</h3>
                   </div>
-                  <p className="mt-4 text-sm leading-relaxed text-(--color-muted) flex-1">
+                  <p className="mt-3 sm:mt-4 text-sm leading-relaxed text-(--color-muted) flex-1">
                     {block.text}
                   </p>
                 </div>
@@ -273,22 +273,22 @@ export default function ProjectDetail() {
       </section>
 
       {/* Previous / Next Project Navigation Bar */}
-      <section className="mx-auto max-w-5xl px-5 pb-16">
-        <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
+      <section className="mx-auto max-w-5xl px-4 sm:px-5 pb-12 sm:pb-16">
+        <div className="grid grid-cols-1 gap-3 sm:gap-4 sm:grid-cols-2">
           {/* Previous */}
           <Link
             to={path(`/portfolio/${prevProject.slug}`)}
-            className="group flex items-center justify-between rounded-2xl border border-white/10 bg-[#0c0c16]/60 p-5 backdrop-blur-lg transition-all hover:border-white/25 hover:bg-white/[0.03]"
+            className="group flex items-center justify-between rounded-2xl border border-white/10 bg-[#0c0c16]/60 p-4 sm:p-5 backdrop-blur-lg transition-all hover:border-white/25 hover:bg-white/[0.03]"
           >
             <div className="flex items-center gap-3">
-              <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-white/5 text-white/60 transition-colors group-hover:bg-white/10 group-hover:text-white">
-                <ChevronLeft size={20} className={dir === "rtl" ? "rotate-180" : ""} />
+              <div className="flex h-9 w-9 sm:h-10 sm:w-10 items-center justify-center rounded-xl bg-white/5 text-white/60 transition-colors group-hover:bg-white/10 group-hover:text-white">
+                <ChevronLeft size={18} className={dir === "rtl" ? "rotate-180" : ""} />
               </div>
               <div>
-                <span className="text-[11px] font-mono text-(--color-muted)">
+                <span className="text-[10px] sm:text-[11px] font-mono text-(--color-muted)">
                   {isAr ? "المشروع السابق" : "Previous Project"}
                 </span>
-                <p className="text-base font-bold text-white group-hover:text-white">{prevProject.name}</p>
+                <p className="text-sm sm:text-base font-bold text-white group-hover:text-white">{prevProject.name}</p>
               </div>
             </div>
           </Link>
@@ -296,17 +296,17 @@ export default function ProjectDetail() {
           {/* Next */}
           <Link
             to={path(`/portfolio/${nextProject.slug}`)}
-            className="group flex items-center justify-between rounded-2xl border border-white/10 bg-[#0c0c16]/60 p-5 backdrop-blur-lg transition-all hover:border-white/25 hover:bg-white/[0.03]"
+            className="group flex items-center justify-between rounded-2xl border border-white/10 bg-[#0c0c16]/60 p-4 sm:p-5 backdrop-blur-lg transition-all hover:border-white/25 hover:bg-white/[0.03]"
           >
             <div className="flex items-center gap-3 ms-auto">
               <div className="text-end">
-                <span className="text-[11px] font-mono text-(--color-muted)">
+                <span className="text-[10px] sm:text-[11px] font-mono text-(--color-muted)">
                   {isAr ? "المشروع التالي" : "Next Project"}
                 </span>
-                <p className="text-base font-bold text-white group-hover:text-white">{nextProject.name}</p>
+                <p className="text-sm sm:text-base font-bold text-white group-hover:text-white">{nextProject.name}</p>
               </div>
-              <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-white/5 text-white/60 transition-colors group-hover:bg-white/10 group-hover:text-white">
-                <ChevronRight size={20} className={dir === "rtl" ? "rotate-180" : ""} />
+              <div className="flex h-9 w-9 sm:h-10 sm:w-10 items-center justify-center rounded-xl bg-white/5 text-white/60 transition-colors group-hover:bg-white/10 group-hover:text-white">
+                <ChevronRight size={18} className={dir === "rtl" ? "rotate-180" : ""} />
               </div>
             </div>
           </Link>
@@ -314,19 +314,19 @@ export default function ProjectDetail() {
       </section>
 
       {/* Related Projects Showcase */}
-      <section className="mx-auto max-w-5xl px-5 pb-20">
-        <div className="mb-8 flex items-center justify-between">
+      <section className="mx-auto max-w-5xl px-4 sm:px-5 pb-16 sm:pb-20">
+        <div className="mb-6 sm:mb-8 flex items-center justify-between">
           <div>
-            <h2 className="text-2xl font-bold text-white">
+            <h2 className="text-xl sm:text-2xl font-bold text-white">
               {isAr ? "مشاريع أخرى قد تهمك" : "Related Case Studies"}
             </h2>
-            <p className="mt-1 text-sm text-(--color-muted)">
+            <p className="mt-1 text-xs sm:text-sm text-(--color-muted)">
               {isAr ? "استكشف المزيد من الحلول الرقمية التي طورناها" : "Explore more custom digital systems engineered by Codexa"}
             </p>
           </div>
           <Link
             to={path("/portfolio")}
-            className="text-xs font-semibold text-(--color-cyan) hover:underline"
+            className="text-xs font-semibold text-(--color-cyan) hover:underline shrink-0"
           >
             {t.portfolio.viewAll} →
           </Link>

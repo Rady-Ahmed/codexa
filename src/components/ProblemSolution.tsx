@@ -17,11 +17,11 @@ export default function ProblemSolution() {
   ];
 
   return (
-    <section className="mx-auto max-w-6xl px-5 py-24">
+    <section className="mx-auto max-w-6xl px-4 sm:px-5 py-16 sm:py-24">
       <SectionHeader eyebrow={t.problem.eyebrow} title={t.problem.title} />
 
-      <div className="mt-14 grid grid-cols-1 gap-5 md:grid-cols-2">
-        <Reveal className="rounded-2xl border border-(--color-border) bg-white/[0.015] p-7">
+      <div className="mt-10 sm:mt-14 grid grid-cols-1 gap-5 md:grid-cols-2">
+        <Reveal className="rounded-2xl border border-(--color-border) bg-white/[0.015] p-5 sm:p-7">
           <h3 className="text-sm font-medium text-(--color-muted)">{t.problem.withoutTitle}</h3>
           <ul className="mt-6 space-y-6">
             {without.map(([title, desc]) => (
@@ -40,7 +40,7 @@ export default function ProblemSolution() {
 
         <Reveal
           delay={0.1}
-          className="relative rounded-2xl border border-(--color-indigo)/40 bg-gradient-to-b from-(--color-indigo)/[0.07] to-transparent p-7"
+          className="relative rounded-2xl border border-(--color-indigo)/40 bg-gradient-to-b from-(--color-indigo)/[0.07] to-transparent p-5 sm:p-7"
         >
           <h3 className="mono-badge text-sm font-medium text-(--color-cyan)">{t.problem.withTitle}</h3>
           <ul className="mt-6 space-y-6">
