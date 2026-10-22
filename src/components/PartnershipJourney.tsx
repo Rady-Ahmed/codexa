@@ -7,8 +7,15 @@ export default function PartnershipJourney() {
 
   return (
     <section className="relative mx-auto w-full max-w-5xl px-5 py-24">
-      <div className="absolute inset-0 -z-10 bg-dots opacity-20" style={{ maskImage: "radial-gradient(ellipse at center, black 0%, transparent 70%)", WebkitMaskImage: "radial-gradient(ellipse at center, black 0%, transparent 70%)" }} />
-      
+      <div
+        className="absolute inset-0 -z-10 bg-dots opacity-20"
+        style={{
+          maskImage: "radial-gradient(ellipse at center, black 0%, transparent 70%)",
+          WebkitMaskImage: "radial-gradient(ellipse at center, black 0%, transparent 70%)",
+        }}
+      />
+
+      {/* Header */}
       <div className="mb-20 text-center">
         <Reveal>
           <span className="mono-badge inline-flex items-center gap-2 rounded-full border border-(--color-border) bg-white/5 px-3 py-1 text-xs text-(--color-cyan) backdrop-blur-sm">
@@ -23,42 +30,94 @@ export default function PartnershipJourney() {
         </Reveal>
       </div>
 
-      <div className="relative">
-        {/* The central line */}
-        <div className={`absolute top-0 bottom-0 w-px bg-gradient-to-b from-transparent via-(--color-indigo) to-transparent ${dir === 'rtl' ? 'right-1/2 translate-x-1/2' : 'left-1/2 -translate-x-1/2'}`} />
+      {/* ── DESKTOP: alternating center timeline (sm and above) ── */}
+      <div className="relative hidden sm:block">
+        {/* Center vertical line */}
+        <div
+          className={`absolute top-0 bottom-0 w-px bg-gradient-to-b from-transparent via-(--color-indigo) to-transparent ${
+            dir === "rtl" ? "right-1/2 translate-x-1/2" : "left-1/2 -translate-x-1/2"
+          }`}
+        />
 
-        <div className="flex flex-col gap-12 sm:gap-20">
+        <div className="flex flex-col gap-20">
           {t.partnershipJourney.steps.map((step, i) => {
             const isEven = i % 2 === 0;
             return (
               <Reveal key={i} delay={i * 0.1}>
-                <div className={`relative flex w-full items-center justify-between ${isEven ? (dir === 'rtl' ? 'flex-row' : 'flex-row-reverse') : (dir === 'rtl' ? 'flex-row-reverse' : 'flex-row')}`}>
-                  
-                  {/* Empty space for alternating layout */}
-                  <div className="hidden w-5/12 sm:block" />
+                <div
+                  className={`relative flex w-full items-center justify-between ${
+                    isEven
+                      ? dir === "rtl"
+                        ? "flex-row"
+                        : "flex-row-reverse"
+                      : dir === "rtl"
+                      ? "flex-row-reverse"
+                      : "flex-row"
+                  }`}
+                >
+                  {/* Empty half */}
+                  <div className="w-5/12" />
 
                   {/* Center dot */}
-                  <div className={`absolute top-1/2 z-10 flex h-8 w-8 -translate-y-1/2 items-center justify-center rounded-full border-4 border-(--color-obsidian) bg-(--color-cyan) ${dir === 'rtl' ? 'right-1/2 translate-x-1/2' : 'left-1/2 -translate-x-1/2'}`}>
+                  <div
+                    className={`absolute top-1/2 z-10 flex h-8 w-8 -translate-y-1/2 items-center justify-center rounded-full border-4 border-(--color-obsidian) bg-(--color-cyan) ${
+                      dir === "rtl"
+                        ? "right-1/2 translate-x-1/2"
+                        : "left-1/2 -translate-x-1/2"
+                    }`}
+                  >
                     <span className="text-xs font-bold text-(--color-obsidian)">{i + 1}</span>
                   </div>
 
                   {/* Content card */}
-                  <motion.div 
+                  <motion.div
                     whileHover={{ scale: 1.02 }}
-                    className="w-full sm:w-5/12 sharp-border bg-white/[0.02] p-6 backdrop-blur-sm"
+                    className="w-5/12 sharp-border bg-white/[0.02] p-6 backdrop-blur-sm"
                   >
-                    <div className="mb-2 text-xl font-bold text-(--color-ink) group-hover:text-(--color-cyan) transition-colors">
+                    <div className="mb-2 text-xl font-bold text-(--color-ink) transition-colors">
                       {step.title}
                     </div>
-                    <p className="text-sm leading-relaxed text-(--color-muted)">
-                      {step.desc}
-                    </p>
+                    <p className="text-sm leading-relaxed text-(--color-muted)">{step.desc}</p>
                   </motion.div>
-
                 </div>
               </Reveal>
             );
           })}
+        </div>
+      </div>
+
+      {/* ── MOBILE: single-column rail timeline (below sm) ── */}
+      <div className="relative sm:hidden">
+        {/* Vertical rail — pinned to the start side */}
+        <div
+          className={`absolute top-0 bottom-0 w-px bg-gradient-to-b from-transparent via-(--color-indigo) to-transparent ${
+            dir === "rtl" ? "right-4" : "left-4"
+          }`}
+        />
+
+        <div className="flex flex-col gap-6">
+          {t.partnershipJourney.steps.map((step, i) => (
+            <Reveal key={i} delay={i * 0.08}>
+              <div
+                className={`flex items-start gap-4 ${
+                  dir === "rtl" ? "flex-row-reverse" : "flex-row"
+                }`}
+              >
+                {/* Numbered dot — sits on the rail */}
+                <div className="relative z-10 flex h-8 w-8 shrink-0 items-center justify-center rounded-full border-4 border-(--color-obsidian) bg-(--color-cyan)">
+                  <span className="text-xs font-bold text-(--color-obsidian)">{i + 1}</span>
+                </div>
+
+                {/* Content card */}
+                <div className="flex-1 sharp-border bg-white/[0.02] p-4 backdrop-blur-sm">
+                  <div className="mb-1.5 text-base font-bold text-(--color-ink)">
+                    {step.title}
+                  </div>
+                  <p className="text-sm leading-relaxed text-(--color-muted)">{step.desc}</p>
+                </div>
+              </div>
+            </Reveal>
+          ))}
         </div>
       </div>
     </section>
