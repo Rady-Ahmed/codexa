@@ -13,6 +13,7 @@ import Preloader from "./components/Preloader";
 import PageTransition from "./components/PageTransition";
 import FloatingContact from "./components/FloatingContact";
 import CustomCursor from "./components/CustomCursor";
+import PWAInstallPrompt from "./components/PWAInstallPrompt";
 
 const Home = lazy(() => import("./pages/Home"));
 const ServicesPage = lazy(() => import("./pages/ServicesPage"));
@@ -93,6 +94,7 @@ function AppShell() {
       <Footer />
       <BackToTop />
       <FloatingContact />
+      <PWAInstallPrompt />
     </LangProvider>
   );
 }

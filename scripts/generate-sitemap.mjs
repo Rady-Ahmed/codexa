@@ -8,7 +8,7 @@ import { dirname, join } from "node:path";
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const root = join(__dirname, "..");
 
-const SITE_URL = "https://rady-ahmed.github.io/codexa";
+const SITE_URL = "https://codexasite.vercel.app";
 
 const staticRoutes = [
   { path: "/", priority: "1.0" },

@@ -1,325 +1,325 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://rady-ahmed.github.io/codexa/</loc>
-    <xhtml:link rel="alternate" hreflang="ar" href="https://rady-ahmed.github.io/codexa/" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://rady-ahmed.github.io/codexa/en" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://rady-ahmed.github.io/codexa/" />
+    <loc>https://codexasite.vercel.app/</loc>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://codexasite.vercel.app/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://codexasite.vercel.app/en" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://codexasite.vercel.app/" />
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://rady-ahmed.github.io/codexa/en</loc>
-    <xhtml:link rel="alternate" hreflang="ar" href="https://rady-ahmed.github.io/codexa/" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://rady-ahmed.github.io/codexa/en" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://rady-ahmed.github.io/codexa/" />
+    <loc>https://codexasite.vercel.app/en</loc>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://codexasite.vercel.app/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://codexasite.vercel.app/en" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://codexasite.vercel.app/" />
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://rady-ahmed.github.io/codexa/services</loc>
-    <xhtml:link rel="alternate" hreflang="ar" href="https://rady-ahmed.github.io/codexa/services" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://rady-ahmed.github.io/codexa/en/services" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://rady-ahmed.github.io/codexa/services" />
+    <loc>https://codexasite.vercel.app/services</loc>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://codexasite.vercel.app/services" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://codexasite.vercel.app/en/services" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://codexasite.vercel.app/services" />
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://rady-ahmed.github.io/codexa/en/services</loc>
-    <xhtml:link rel="alternate" hreflang="ar" href="https://rady-ahmed.github.io/codexa/services" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://rady-ahmed.github.io/codexa/en/services" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://rady-ahmed.github.io/codexa/services" />
+    <loc>https://codexasite.vercel.app/en/services</loc>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://codexasite.vercel.app/services" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://codexasite.vercel.app/en/services" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://codexasite.vercel.app/services" />
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://rady-ahmed.github.io/codexa/portfolio</loc>
-    <xhtml:link rel="alternate" hreflang="ar" href="https://rady-ahmed.github.io/codexa/portfolio" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://rady-ahmed.github.io/codexa/en/portfolio" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://rady-ahmed.github.io/codexa/portfolio" />
+    <loc>https://codexasite.vercel.app/portfolio</loc>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://codexasite.vercel.app/portfolio" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://codexasite.vercel.app/en/portfolio" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://codexasite.vercel.app/portfolio" />
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://rady-ahmed.github.io/codexa/en/portfolio</loc>
-    <xhtml:link rel="alternate" hreflang="ar" href="https://rady-ahmed.github.io/codexa/portfolio" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://rady-ahmed.github.io/codexa/en/portfolio" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://rady-ahmed.github.io/codexa/portfolio" />
+    <loc>https://codexasite.vercel.app/en/portfolio</loc>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://codexasite.vercel.app/portfolio" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://codexasite.vercel.app/en/portfolio" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://codexasite.vercel.app/portfolio" />
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://rady-ahmed.github.io/codexa/pricing</loc>
-    <xhtml:link rel="alternate" hreflang="ar" href="https://rady-ahmed.github.io/codexa/pricing" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://rady-ahmed.github.io/codexa/en/pricing" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://rady-ahmed.github.io/codexa/pricing" />
+    <loc>https://codexasite.vercel.app/pricing</loc>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://codexasite.vercel.app/pricing" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://codexasite.vercel.app/en/pricing" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://codexasite.vercel.app/pricing" />
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://rady-ahmed.github.io/codexa/en/pricing</loc>
-    <xhtml:link rel="alternate" hreflang="ar" href="https://rady-ahmed.github.io/codexa/pricing" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://rady-ahmed.github.io/codexa/en/pricing" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://rady-ahmed.github.io/codexa/pricing" />
+    <loc>https://codexasite.vercel.app/en/pricing</loc>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://codexasite.vercel.app/pricing" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://codexasite.vercel.app/en/pricing" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://codexasite.vercel.app/pricing" />
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://rady-ahmed.github.io/codexa/about</loc>
-    <xhtml:link rel="alternate" hreflang="ar" href="https://rady-ahmed.github.io/codexa/about" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://rady-ahmed.github.io/codexa/en/about" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://rady-ahmed.github.io/codexa/about" />
+    <loc>https://codexasite.vercel.app/about</loc>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://codexasite.vercel.app/about" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://codexasite.vercel.app/en/about" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://codexasite.vercel.app/about" />
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://rady-ahmed.github.io/codexa/en/about</loc>
-    <xhtml:link rel="alternate" hreflang="ar" href="https://rady-ahmed.github.io/codexa/about" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://rady-ahmed.github.io/codexa/en/about" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://rady-ahmed.github.io/codexa/about" />
+    <loc>https://codexasite.vercel.app/en/about</loc>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://codexasite.vercel.app/about" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://codexasite.vercel.app/en/about" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://codexasite.vercel.app/about" />
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://rady-ahmed.github.io/codexa/blog</loc>
-    <xhtml:link rel="alternate" hreflang="ar" href="https://rady-ahmed.github.io/codexa/blog" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://rady-ahmed.github.io/codexa/en/blog" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://rady-ahmed.github.io/codexa/blog" />
+    <loc>https://codexasite.vercel.app/blog</loc>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://codexasite.vercel.app/blog" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://codexasite.vercel.app/en/blog" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://codexasite.vercel.app/blog" />
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://rady-ahmed.github.io/codexa/en/blog</loc>
-    <xhtml:link rel="alternate" hreflang="ar" href="https://rady-ahmed.github.io/codexa/blog" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://rady-ahmed.github.io/codexa/en/blog" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://rady-ahmed.github.io/codexa/blog" />
+    <loc>https://codexasite.vercel.app/en/blog</loc>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://codexasite.vercel.app/blog" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://codexasite.vercel.app/en/blog" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://codexasite.vercel.app/blog" />
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://rady-ahmed.github.io/codexa/contact</loc>
-    <xhtml:link rel="alternate" hreflang="ar" href="https://rady-ahmed.github.io/codexa/contact" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://rady-ahmed.github.io/codexa/en/contact" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://rady-ahmed.github.io/codexa/contact" />
+    <loc>https://codexasite.vercel.app/contact</loc>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://codexasite.vercel.app/contact" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://codexasite.vercel.app/en/contact" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://codexasite.vercel.app/contact" />
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://rady-ahmed.github.io/codexa/en/contact</loc>
-    <xhtml:link rel="alternate" hreflang="ar" href="https://rady-ahmed.github.io/codexa/contact" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://rady-ahmed.github.io/codexa/en/contact" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://rady-ahmed.github.io/codexa/contact" />
+    <loc>https://codexasite.vercel.app/en/contact</loc>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://codexasite.vercel.app/contact" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://codexasite.vercel.app/en/contact" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://codexasite.vercel.app/contact" />
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://rady-ahmed.github.io/codexa/privacy</loc>
-    <xhtml:link rel="alternate" hreflang="ar" href="https://rady-ahmed.github.io/codexa/privacy" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://rady-ahmed.github.io/codexa/en/privacy" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://rady-ahmed.github.io/codexa/privacy" />
+    <loc>https://codexasite.vercel.app/privacy</loc>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://codexasite.vercel.app/privacy" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://codexasite.vercel.app/en/privacy" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://codexasite.vercel.app/privacy" />
     <priority>0.3</priority>
   </url>
   <url>
-    <loc>https://rady-ahmed.github.io/codexa/en/privacy</loc>
-    <xhtml:link rel="alternate" hreflang="ar" href="https://rady-ahmed.github.io/codexa/privacy" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://rady-ahmed.github.io/codexa/en/privacy" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://rady-ahmed.github.io/codexa/privacy" />
+    <loc>https://codexasite.vercel.app/en/privacy</loc>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://codexasite.vercel.app/privacy" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://codexasite.vercel.app/en/privacy" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://codexasite.vercel.app/privacy" />
     <priority>0.3</priority>
   </url>
   <url>
-    <loc>https://rady-ahmed.github.io/codexa/terms</loc>
-    <xhtml:link rel="alternate" hreflang="ar" href="https://rady-ahmed.github.io/codexa/terms" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://rady-ahmed.github.io/codexa/en/terms" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://rady-ahmed.github.io/codexa/terms" />
+    <loc>https://codexasite.vercel.app/terms</loc>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://codexasite.vercel.app/terms" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://codexasite.vercel.app/en/terms" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://codexasite.vercel.app/terms" />
     <priority>0.3</priority>
   </url>
   <url>
-    <loc>https://rady-ahmed.github.io/codexa/en/terms</loc>
-    <xhtml:link rel="alternate" hreflang="ar" href="https://rady-ahmed.github.io/codexa/terms" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://rady-ahmed.github.io/codexa/en/terms" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://rady-ahmed.github.io/codexa/terms" />
+    <loc>https://codexasite.vercel.app/en/terms</loc>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://codexasite.vercel.app/terms" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://codexasite.vercel.app/en/terms" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://codexasite.vercel.app/terms" />
     <priority>0.3</priority>
   </url>
   <url>
-    <loc>https://rady-ahmed.github.io/codexa/services/web-mobile</loc>
-    <xhtml:link rel="alternate" hreflang="ar" href="https://rady-ahmed.github.io/codexa/services/web-mobile" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://rady-ahmed.github.io/codexa/en/services/web-mobile" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://rady-ahmed.github.io/codexa/services/web-mobile" />
+    <loc>https://codexasite.vercel.app/services/web-mobile</loc>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://codexasite.vercel.app/services/web-mobile" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://codexasite.vercel.app/en/services/web-mobile" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://codexasite.vercel.app/services/web-mobile" />
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://rady-ahmed.github.io/codexa/en/services/web-mobile</loc>
-    <xhtml:link rel="alternate" hreflang="ar" href="https://rady-ahmed.github.io/codexa/services/web-mobile" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://rady-ahmed.github.io/codexa/en/services/web-mobile" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://rady-ahmed.github.io/codexa/services/web-mobile" />
+    <loc>https://codexasite.vercel.app/en/services/web-mobile</loc>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://codexasite.vercel.app/services/web-mobile" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://codexasite.vercel.app/en/services/web-mobile" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://codexasite.vercel.app/services/web-mobile" />
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://rady-ahmed.github.io/codexa/services/edtech</loc>
-    <xhtml:link rel="alternate" hreflang="ar" href="https://rady-ahmed.github.io/codexa/services/edtech" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://rady-ahmed.github.io/codexa/en/services/edtech" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://rady-ahmed.github.io/codexa/services/edtech" />
+    <loc>https://codexasite.vercel.app/services/edtech</loc>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://codexasite.vercel.app/services/edtech" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://codexasite.vercel.app/en/services/edtech" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://codexasite.vercel.app/services/edtech" />
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://rady-ahmed.github.io/codexa/en/services/edtech</loc>
-    <xhtml:link rel="alternate" hreflang="ar" href="https://rady-ahmed.github.io/codexa/services/edtech" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://rady-ahmed.github.io/codexa/en/services/edtech" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://rady-ahmed.github.io/codexa/services/edtech" />
+    <loc>https://codexasite.vercel.app/en/services/edtech</loc>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://codexasite.vercel.app/services/edtech" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://codexasite.vercel.app/en/services/edtech" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://codexasite.vercel.app/services/edtech" />
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://rady-ahmed.github.io/codexa/services/enterprise</loc>
-    <xhtml:link rel="alternate" hreflang="ar" href="https://rady-ahmed.github.io/codexa/services/enterprise" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://rady-ahmed.github.io/codexa/en/services/enterprise" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://rady-ahmed.github.io/codexa/services/enterprise" />
+    <loc>https://codexasite.vercel.app/services/enterprise</loc>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://codexasite.vercel.app/services/enterprise" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://codexasite.vercel.app/en/services/enterprise" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://codexasite.vercel.app/services/enterprise" />
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://rady-ahmed.github.io/codexa/en/services/enterprise</loc>
-    <xhtml:link rel="alternate" hreflang="ar" href="https://rady-ahmed.github.io/codexa/services/enterprise" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://rady-ahmed.github.io/codexa/en/services/enterprise" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://rady-ahmed.github.io/codexa/services/enterprise" />
+    <loc>https://codexasite.vercel.app/en/services/enterprise</loc>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://codexasite.vercel.app/services/enterprise" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://codexasite.vercel.app/en/services/enterprise" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://codexasite.vercel.app/services/enterprise" />
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://rady-ahmed.github.io/codexa/services/infrastructure</loc>
-    <xhtml:link rel="alternate" hreflang="ar" href="https://rady-ahmed.github.io/codexa/services/infrastructure" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://rady-ahmed.github.io/codexa/en/services/infrastructure" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://rady-ahmed.github.io/codexa/services/infrastructure" />
+    <loc>https://codexasite.vercel.app/services/infrastructure</loc>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://codexasite.vercel.app/services/infrastructure" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://codexasite.vercel.app/en/services/infrastructure" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://codexasite.vercel.app/services/infrastructure" />
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://rady-ahmed.github.io/codexa/en/services/infrastructure</loc>
-    <xhtml:link rel="alternate" hreflang="ar" href="https://rady-ahmed.github.io/codexa/services/infrastructure" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://rady-ahmed.github.io/codexa/en/services/infrastructure" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://rady-ahmed.github.io/codexa/services/infrastructure" />
+    <loc>https://codexasite.vercel.app/en/services/infrastructure</loc>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://codexasite.vercel.app/services/infrastructure" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://codexasite.vercel.app/en/services/infrastructure" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://codexasite.vercel.app/services/infrastructure" />
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://rady-ahmed.github.io/codexa/services/design-digital</loc>
-    <xhtml:link rel="alternate" hreflang="ar" href="https://rady-ahmed.github.io/codexa/services/design-digital" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://rady-ahmed.github.io/codexa/en/services/design-digital" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://rady-ahmed.github.io/codexa/services/design-digital" />
+    <loc>https://codexasite.vercel.app/services/design-digital</loc>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://codexasite.vercel.app/services/design-digital" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://codexasite.vercel.app/en/services/design-digital" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://codexasite.vercel.app/services/design-digital" />
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://rady-ahmed.github.io/codexa/en/services/design-digital</loc>
-    <xhtml:link rel="alternate" hreflang="ar" href="https://rady-ahmed.github.io/codexa/services/design-digital" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://rady-ahmed.github.io/codexa/en/services/design-digital" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://rady-ahmed.github.io/codexa/services/design-digital" />
+    <loc>https://codexasite.vercel.app/en/services/design-digital</loc>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://codexasite.vercel.app/services/design-digital" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://codexasite.vercel.app/en/services/design-digital" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://codexasite.vercel.app/services/design-digital" />
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://rady-ahmed.github.io/codexa/blog/how-to-build-mvp</loc>
-    <xhtml:link rel="alternate" hreflang="ar" href="https://rady-ahmed.github.io/codexa/blog/how-to-build-mvp" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://rady-ahmed.github.io/codexa/en/blog/how-to-build-mvp" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://rady-ahmed.github.io/codexa/blog/how-to-build-mvp" />
+    <loc>https://codexasite.vercel.app/blog/how-to-build-mvp</loc>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://codexasite.vercel.app/blog/how-to-build-mvp" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://codexasite.vercel.app/en/blog/how-to-build-mvp" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://codexasite.vercel.app/blog/how-to-build-mvp" />
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://rady-ahmed.github.io/codexa/en/blog/how-to-build-mvp</loc>
-    <xhtml:link rel="alternate" hreflang="ar" href="https://rady-ahmed.github.io/codexa/blog/how-to-build-mvp" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://rady-ahmed.github.io/codexa/en/blog/how-to-build-mvp" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://rady-ahmed.github.io/codexa/blog/how-to-build-mvp" />
+    <loc>https://codexasite.vercel.app/en/blog/how-to-build-mvp</loc>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://codexasite.vercel.app/blog/how-to-build-mvp" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://codexasite.vercel.app/en/blog/how-to-build-mvp" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://codexasite.vercel.app/blog/how-to-build-mvp" />
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://rady-ahmed.github.io/codexa/blog/why-react-for-startups</loc>
-    <xhtml:link rel="alternate" hreflang="ar" href="https://rady-ahmed.github.io/codexa/blog/why-react-for-startups" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://rady-ahmed.github.io/codexa/en/blog/why-react-for-startups" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://rady-ahmed.github.io/codexa/blog/why-react-for-startups" />
+    <loc>https://codexasite.vercel.app/blog/why-react-for-startups</loc>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://codexasite.vercel.app/blog/why-react-for-startups" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://codexasite.vercel.app/en/blog/why-react-for-startups" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://codexasite.vercel.app/blog/why-react-for-startups" />
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://rady-ahmed.github.io/codexa/en/blog/why-react-for-startups</loc>
-    <xhtml:link rel="alternate" hreflang="ar" href="https://rady-ahmed.github.io/codexa/blog/why-react-for-startups" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://rady-ahmed.github.io/codexa/en/blog/why-react-for-startups" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://rady-ahmed.github.io/codexa/blog/why-react-for-startups" />
+    <loc>https://codexasite.vercel.app/en/blog/why-react-for-startups</loc>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://codexasite.vercel.app/blog/why-react-for-startups" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://codexasite.vercel.app/en/blog/why-react-for-startups" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://codexasite.vercel.app/blog/why-react-for-startups" />
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://rady-ahmed.github.io/codexa/blog/ui-ux-importance</loc>
-    <xhtml:link rel="alternate" hreflang="ar" href="https://rady-ahmed.github.io/codexa/blog/ui-ux-importance" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://rady-ahmed.github.io/codexa/en/blog/ui-ux-importance" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://rady-ahmed.github.io/codexa/blog/ui-ux-importance" />
+    <loc>https://codexasite.vercel.app/blog/ui-ux-importance</loc>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://codexasite.vercel.app/blog/ui-ux-importance" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://codexasite.vercel.app/en/blog/ui-ux-importance" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://codexasite.vercel.app/blog/ui-ux-importance" />
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://rady-ahmed.github.io/codexa/en/blog/ui-ux-importance</loc>
-    <xhtml:link rel="alternate" hreflang="ar" href="https://rady-ahmed.github.io/codexa/blog/ui-ux-importance" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://rady-ahmed.github.io/codexa/en/blog/ui-ux-importance" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://rady-ahmed.github.io/codexa/blog/ui-ux-importance" />
+    <loc>https://codexasite.vercel.app/en/blog/ui-ux-importance</loc>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://codexasite.vercel.app/blog/ui-ux-importance" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://codexasite.vercel.app/en/blog/ui-ux-importance" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://codexasite.vercel.app/blog/ui-ux-importance" />
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://rady-ahmed.github.io/codexa/blog/cloud-hosting-guide</loc>
-    <xhtml:link rel="alternate" hreflang="ar" href="https://rady-ahmed.github.io/codexa/blog/cloud-hosting-guide" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://rady-ahmed.github.io/codexa/en/blog/cloud-hosting-guide" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://rady-ahmed.github.io/codexa/blog/cloud-hosting-guide" />
+    <loc>https://codexasite.vercel.app/blog/cloud-hosting-guide</loc>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://codexasite.vercel.app/blog/cloud-hosting-guide" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://codexasite.vercel.app/en/blog/cloud-hosting-guide" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://codexasite.vercel.app/blog/cloud-hosting-guide" />
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://rady-ahmed.github.io/codexa/en/blog/cloud-hosting-guide</loc>
-    <xhtml:link rel="alternate" hreflang="ar" href="https://rady-ahmed.github.io/codexa/blog/cloud-hosting-guide" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://rady-ahmed.github.io/codexa/en/blog/cloud-hosting-guide" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://rady-ahmed.github.io/codexa/blog/cloud-hosting-guide" />
+    <loc>https://codexasite.vercel.app/en/blog/cloud-hosting-guide</loc>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://codexasite.vercel.app/blog/cloud-hosting-guide" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://codexasite.vercel.app/en/blog/cloud-hosting-guide" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://codexasite.vercel.app/blog/cloud-hosting-guide" />
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://rady-ahmed.github.io/codexa/portfolio/alsharea-society</loc>
-    <xhtml:link rel="alternate" hreflang="ar" href="https://rady-ahmed.github.io/codexa/portfolio/alsharea-society" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://rady-ahmed.github.io/codexa/en/portfolio/alsharea-society" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://rady-ahmed.github.io/codexa/portfolio/alsharea-society" />
+    <loc>https://codexasite.vercel.app/portfolio/alsharea-society</loc>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://codexasite.vercel.app/portfolio/alsharea-society" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://codexasite.vercel.app/en/portfolio/alsharea-society" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://codexasite.vercel.app/portfolio/alsharea-society" />
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://rady-ahmed.github.io/codexa/en/portfolio/alsharea-society</loc>
-    <xhtml:link rel="alternate" hreflang="ar" href="https://rady-ahmed.github.io/codexa/portfolio/alsharea-society" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://rady-ahmed.github.io/codexa/en/portfolio/alsharea-society" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://rady-ahmed.github.io/codexa/portfolio/alsharea-society" />
+    <loc>https://codexasite.vercel.app/en/portfolio/alsharea-society</loc>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://codexasite.vercel.app/portfolio/alsharea-society" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://codexasite.vercel.app/en/portfolio/alsharea-society" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://codexasite.vercel.app/portfolio/alsharea-society" />
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://rady-ahmed.github.io/codexa/portfolio/masar-lms</loc>
-    <xhtml:link rel="alternate" hreflang="ar" href="https://rady-ahmed.github.io/codexa/portfolio/masar-lms" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://rady-ahmed.github.io/codexa/en/portfolio/masar-lms" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://rady-ahmed.github.io/codexa/portfolio/masar-lms" />
+    <loc>https://codexasite.vercel.app/portfolio/masar-lms</loc>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://codexasite.vercel.app/portfolio/masar-lms" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://codexasite.vercel.app/en/portfolio/masar-lms" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://codexasite.vercel.app/portfolio/masar-lms" />
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://rady-ahmed.github.io/codexa/en/portfolio/masar-lms</loc>
-    <xhtml:link rel="alternate" hreflang="ar" href="https://rady-ahmed.github.io/codexa/portfolio/masar-lms" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://rady-ahmed.github.io/codexa/en/portfolio/masar-lms" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://rady-ahmed.github.io/codexa/portfolio/masar-lms" />
+    <loc>https://codexasite.vercel.app/en/portfolio/masar-lms</loc>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://codexasite.vercel.app/portfolio/masar-lms" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://codexasite.vercel.app/en/portfolio/masar-lms" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://codexasite.vercel.app/portfolio/masar-lms" />
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://rady-ahmed.github.io/codexa/portfolio/roaa-quran</loc>
-    <xhtml:link rel="alternate" hreflang="ar" href="https://rady-ahmed.github.io/codexa/portfolio/roaa-quran" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://rady-ahmed.github.io/codexa/en/portfolio/roaa-quran" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://rady-ahmed.github.io/codexa/portfolio/roaa-quran" />
+    <loc>https://codexasite.vercel.app/portfolio/roaa-quran</loc>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://codexasite.vercel.app/portfolio/roaa-quran" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://codexasite.vercel.app/en/portfolio/roaa-quran" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://codexasite.vercel.app/portfolio/roaa-quran" />
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://rady-ahmed.github.io/codexa/en/portfolio/roaa-quran</loc>
-    <xhtml:link rel="alternate" hreflang="ar" href="https://rady-ahmed.github.io/codexa/portfolio/roaa-quran" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://rady-ahmed.github.io/codexa/en/portfolio/roaa-quran" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://rady-ahmed.github.io/codexa/portfolio/roaa-quran" />
+    <loc>https://codexasite.vercel.app/en/portfolio/roaa-quran</loc>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://codexasite.vercel.app/portfolio/roaa-quran" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://codexasite.vercel.app/en/portfolio/roaa-quran" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://codexasite.vercel.app/portfolio/roaa-quran" />
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://rady-ahmed.github.io/codexa/portfolio/codexa-portfolio</loc>
-    <xhtml:link rel="alternate" hreflang="ar" href="https://rady-ahmed.github.io/codexa/portfolio/codexa-portfolio" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://rady-ahmed.github.io/codexa/en/portfolio/codexa-portfolio" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://rady-ahmed.github.io/codexa/portfolio/codexa-portfolio" />
+    <loc>https://codexasite.vercel.app/portfolio/codexa-portfolio</loc>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://codexasite.vercel.app/portfolio/codexa-portfolio" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://codexasite.vercel.app/en/portfolio/codexa-portfolio" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://codexasite.vercel.app/portfolio/codexa-portfolio" />
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://rady-ahmed.github.io/codexa/en/portfolio/codexa-portfolio</loc>
-    <xhtml:link rel="alternate" hreflang="ar" href="https://rady-ahmed.github.io/codexa/portfolio/codexa-portfolio" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://rady-ahmed.github.io/codexa/en/portfolio/codexa-portfolio" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://rady-ahmed.github.io/codexa/portfolio/codexa-portfolio" />
+    <loc>https://codexasite.vercel.app/en/portfolio/codexa-portfolio</loc>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://codexasite.vercel.app/portfolio/codexa-portfolio" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://codexasite.vercel.app/en/portfolio/codexa-portfolio" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://codexasite.vercel.app/portfolio/codexa-portfolio" />
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://rady-ahmed.github.io/codexa/portfolio/care-hospital-erp</loc>
-    <xhtml:link rel="alternate" hreflang="ar" href="https://rady-ahmed.github.io/codexa/portfolio/care-hospital-erp" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://rady-ahmed.github.io/codexa/en/portfolio/care-hospital-erp" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://rady-ahmed.github.io/codexa/portfolio/care-hospital-erp" />
+    <loc>https://codexasite.vercel.app/portfolio/care-hospital-erp</loc>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://codexasite.vercel.app/portfolio/care-hospital-erp" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://codexasite.vercel.app/en/portfolio/care-hospital-erp" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://codexasite.vercel.app/portfolio/care-hospital-erp" />
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://rady-ahmed.github.io/codexa/en/portfolio/care-hospital-erp</loc>
-    <xhtml:link rel="alternate" hreflang="ar" href="https://rady-ahmed.github.io/codexa/portfolio/care-hospital-erp" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://rady-ahmed.github.io/codexa/en/portfolio/care-hospital-erp" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://rady-ahmed.github.io/codexa/portfolio/care-hospital-erp" />
+    <loc>https://codexasite.vercel.app/en/portfolio/care-hospital-erp</loc>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://codexasite.vercel.app/portfolio/care-hospital-erp" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://codexasite.vercel.app/en/portfolio/care-hospital-erp" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://codexasite.vercel.app/portfolio/care-hospital-erp" />
     <priority>0.6</priority>
   </url>
 </urlset>

@@ -1,12 +1,44 @@
 {
-  "name": "Codexa",
+  "name": "Codexa — استوديو هندسة البرمجيات",
   "short_name": "Codexa",
-  "description": "We build systems, not just websites.",
+  "description": "استوديو هندسي متخصص في بناء منصات ويب عالمية، أنظمة SaaS، وتطبيقات المؤسسات.",
   "start_url": "/",
+  "scope": "/",
   "display": "standalone",
-  "background_color": "#0A0A0F",
-  "theme_color": "#0A0A0F",
+  "orientation": "portrait",
+  "background_color": "#09090b",
+  "theme_color": "#09090b",
+  "lang": "ar",
+  "dir": "rtl",
+  "categories": ["business", "productivity", "utilities"],
   "icons": [
-    { "src": "/favicon.svg", "sizes": "any", "type": "image/svg+xml" }
+    {
+      "src": "/favicon.svg",
+      "sizes": "192x192 512x512",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    },
+    {
+      "src": "/pwa-icon.svg",
+      "sizes": "512x512",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "أعمالنا",
+      "short_name": "المشاريع",
+      "description": "استعرض سابقة أعمال كوديكسا",
+      "url": "/portfolio",
+      "icons": [{ "src": "/favicon.svg", "sizes": "96x96" }]
+    },
+    {
+      "name": "طلب مشروع",
+      "short_name": "تواصل معنا",
+      "description": "تواصل مباشرة لطلب حل تقني مخصص",
+      "url": "/contact",
+      "icons": [{ "src": "/favicon.svg", "sizes": "96x96" }]
+    }
   ]
 }

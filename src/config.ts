@@ -1,4 +1,4 @@
-export const SITE_URL = "https://rady-ahmed.github.io/codexa";
+export const SITE_URL = "https://codexasite.vercel.app";
 
 // Every real page in the app, used to generate the sitemap and hreflang
 // alternates automatically. Add a new page here once and it's covered
